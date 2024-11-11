@@ -34,3 +34,33 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+Project Structure
+src/app: Contains the main application code.
+page.tsx: Main landing page with UH Manoa styling.
+login/page.tsx: User login page with authentication logic.
+home/page.tsx: User home page with navigation and initial menu display.
+Changelog
+November 10, 2024
+Kanoa: Implemented UH Manoa color scheme using dark green (#005C39).
+Kanoa: Built the login page with email and password validation for University of Hawaii credentials.
+Kanoa: Developed the landing page with navigation and basic UI components.
+Kanoa: Integrated user authentication flow with redirection upon successful login.
+Contributions
+Kanoa: Implemented UH Manoa color scheme, built the login and landing pages, and integrated user authentication.
+Deployment
+This application is deployed on GitHub Pages. You can access the live version at:
+
+Manoa Munchies GitHub Pages
+
+Learn More
+To learn more about the tools and frameworks used in this project, visit:
+
+Next.js Documentation - Learn about Next.js features and API.
+Tailwind CSS Documentation - Learn about utility-first CSS framework.
+Acknowledgments
+Developed as part of the ICS 314 Software Engineering course at the University of Hawaii.
+Special thanks to Cam Moore, Chad Morita, Dan Port, and Brook Conner for project guidelines and feedback.
+
+
