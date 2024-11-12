@@ -28,8 +28,9 @@ Hawaii Bites provides a consolidated menu from all food vendors at the Universit
 
 
 ## User Guide
-- Navigate to "Foods Available Now" to see what’s being served.
-- 
+- Navigate through the Welcome Page to see what’s being served.
+- Filter through foods according to what your preferences is.
+- Get updates on Specials and Top Picks
 
 ## Developer Guide
 To run this project locally:
@@ -69,4 +70,4 @@ To run this project locally:
 
 ## Contact Us
 - Email: **hawaiibites@gmail.com**
-- GitHub: [Manoa Munchies Organization](https://github.com/manoa-munchies)
+- GitHub: [Hawaii Bites Organization](https://github.com/hawaii-bites)
