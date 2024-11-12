@@ -6,7 +6,7 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto flex justify-between items-center">
         <h1 className="text-2xl font-bold">Manoa Munchies</h1>
         <nav className="space-x-4">
-          <Link href="/" className="hover:underline">Home</Link>
+          <Link href="/home" className="hover:underline">Home</Link>
           <Link href="/menu" className="hover:underline">Menu</Link>
           <Link href="/profile" className="hover:underline">Profile</Link>
         </nav>
