@@ -28,7 +28,7 @@ export default function LoginPage() {
   return (
     <div className="flex items-center justify-center min-h-screen bg-green-100">
       <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-sm">
-        <h2 className="text-2xl font-bold mb-6 text-center text-black">Manoa Munchies Login</h2>
+        <h2 className="text-2xl font-bold mb-6 text-center text-black">Hawaii Bites Login</h2>
         <form onSubmit={handleLogin}>
           <div className="mb-4">
             <label htmlFor="email" className="block text-sm font-medium text-black">UH Email</label>
