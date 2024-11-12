@@ -10,6 +10,8 @@ const Navbar: React.FC = () => {
           <Link href="/profile" className="hover:underline">Profile</Link>
           <Link href="/todays-top-picks" className="hover:underline">Today&apos;s Top Picks</Link>
           <Link href="/food-available-now" className="hover:underline">Food&apos;s Available Right Now</Link>
+          <Link href="/Admin" className="hover:underline">Admin</Link>
+          <Link href="/Vendor" className="hover:underline">Vendor</Link>
         </nav>
       </div>
     </header>
