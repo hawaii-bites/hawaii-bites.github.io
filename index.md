@@ -6,15 +6,22 @@ Welcome to Hawaii Bites! This app helps students find their favorite meals on ca
 
 ## Navigation
 - [Overview](#overview)
+- [Project Mockups](#project-mockups)
+- [Project Goals](#project-goals)
 - [User Guide](#user-guide)
 - [Developer Guide](#developer-guide)
+- [Meet the Team](#meet-the-team)
 - [Contact Us](#contact-us)
+
+ 
+
+
 
 ## Overview
 Hawaii Bites provides a consolidated menu from all food vendors at the University of Hawaii, including food trucks, Campus Center, and Paradise Palms.
 
 
-# Project Pages Overview
+# Project Mockups
 
 <div style="display: flex; flex-direction: column; align-items: center; gap: 30px; padding: 20px;">
 
