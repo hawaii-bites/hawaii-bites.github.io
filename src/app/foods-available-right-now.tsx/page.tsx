@@ -1,7 +1,6 @@
 import React from 'react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
-import Image from 'next/image'; // Import from 'next/image' if you're using Next.js
 
 const FoodsAvailableRightNowPage: React.FC = () => {
   // Sample data for foods available right now
@@ -9,7 +8,6 @@ const FoodsAvailableRightNowPage: React.FC = () => {
     {
       id: 1,
       name: 'Holoholo Bistro',
-      image: '/holoholo-bistro.jpg',
       location: 'Food Truck Row',
       hours: 'Currently Closed',
       favoriteItems: [
@@ -21,7 +19,6 @@ const FoodsAvailableRightNowPage: React.FC = () => {
     {
       id: 2,
       name: 'Krazy Dogs',
-      image: '/krazy-dogs.jpg',
       location: 'Food Truck Row',
       hours: 'Tue, Wed 10am-2pm',
       favoriteItems: [
@@ -33,7 +30,6 @@ const FoodsAvailableRightNowPage: React.FC = () => {
     {
       id: 3,
       name: 'Middle Eats',
-      image: '/middle-eats.jpg',
       location: 'Food Truck Row',
       hours: 'Tue, Thu, Fri 10am-2pm',
       favoriteItems: [
@@ -45,7 +41,6 @@ const FoodsAvailableRightNowPage: React.FC = () => {
     {
       id: 4,
       name: 'Olay’s Thai Lao Express',
-      image: '/olays-thai-lao.jpg',
       location: 'Food Truck Row',
       hours: 'Tue, Thu 10am-2pm',
       favoriteItems: [
@@ -57,7 +52,6 @@ const FoodsAvailableRightNowPage: React.FC = () => {
     {
       id: 5,
       name: 'Saap Saap HI',
-      image: '/saap-saap-hi.jpg',
       location: 'Food Truck Row',
       hours: 'Mon, Wed, Thu, Fri 10am-2pm',
       favoriteItems: [
@@ -69,7 +63,6 @@ const FoodsAvailableRightNowPage: React.FC = () => {
     {
       id: 6,
       name: 'Veggie Dogs',
-      image: '/veggie-dogs.jpg',
       location: 'Food Truck Row',
       hours: 'Mon 10am-2pm',
       favoriteItems: [
@@ -81,7 +74,6 @@ const FoodsAvailableRightNowPage: React.FC = () => {
     {
       id: 7,
       name: 'Dunkin’ Donuts',
-      image: '/dunkin-donuts.jpg',
       location: 'Paradise Palms Café',
       hours: 'Mon-Fri 7am–4:30pm',
       favoriteItems: [
@@ -93,7 +85,6 @@ const FoodsAvailableRightNowPage: React.FC = () => {
     {
       id: 8,
       name: 'HoloHolo Grill',
-      image: '/holoholo-grill.jpg',
       location: 'Paradise Palms Café',
       hours: 'Mon-Fri 8am–3pm',
       favoriteItems: [
@@ -105,7 +96,6 @@ const FoodsAvailableRightNowPage: React.FC = () => {
     {
       id: 9,
       name: 'L&L Hawaiian Barbecue',
-      image: '/ll-hawaiian-bbq.jpg',
       location: 'Paradise Palms Café',
       hours: 'Mon-Fri 7am–4:30pm',
       favoriteItems: [
@@ -117,25 +107,12 @@ const FoodsAvailableRightNowPage: React.FC = () => {
     {
       id: 10,
       name: 'Lasoon',
-      image: '/lasoon.jpg',
       location: 'Paradise Palms Café',
       hours: 'Mon-Fri 10am–4:30pm',
       favoriteItems: [
         'Chicken Tikka Masala - Tender chicken pieces cooked in a rich, spiced tomato sauce.',
         'Vegetable Biryani - A fragrant rice dish with mixed vegetables and spices.',
         'Samosa Chaat - Crispy samosas topped with tangy yogurt and chutneys.',
-      ],
-    },
-    {
-      id: 11,
-      name: 'Panda Express',
-      image: '/panda-express.jpg',
-      location: 'Paradise Palms Café',
-      hours: 'Mon-Fri 10am–4:30pm',
-      favoriteItems: [
-        'Orange Chicken - Crispy chicken tossed in a sweet and tangy orange sauce.',
-        'Beijing Beef - Tender beef strips stir-fried with bell peppers and onions in a spicy sauce.',
-        'Chow Mein - Stir-fried noodles with cabbage, onions, and celery.',
       ],
     },
   ];
@@ -158,13 +135,6 @@ const FoodsAvailableRightNowPage: React.FC = () => {
                 backgroundColor: '#f9f9f9',
               }}
             >
-              <Image
-                src={food.image}
-                alt={food.name}
-                width={300}
-                height={200}
-                style={{ objectFit: 'cover', borderRadius: '10px' }}
-              />
               <h3 style={{ marginTop: '10px', color: '#000' }}>{food.name}</h3>
               <p style={{ color: '#333', fontSize: '14px' }}>{food.location}</p>
               <p style={{ color: '#555', fontSize: '12px' }}><strong>Hours:</strong> {food.hours}</p>
