@@ -14,9 +14,11 @@ export default function LoginPage() {
 
     const validEmail = 'dkb25@hawaii.edu';
     const validPassword = 'MoonWalker769*';
+    const validEmail2 = 'sethi3@hawaii.edu';
+    const validPassword2 = 'Sword23';
 
     // Validate email and password
-    if (email === validEmail && password === validPassword) {
+    if ((email === validEmail && password === validPassword) || (email === validEmail2 && password === validPassword2)) {
       alert('Login successful!');
       router.push('/home');
     } else {
