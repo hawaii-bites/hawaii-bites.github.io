@@ -28,7 +28,7 @@ To run this project locally:
 # Meet the Team
 
 ## Kanoa Borromeo
-![Kanoa Borromeo](./public/WeddingHeadShot.jpeg)
+![Kanoa Borromeo](./public/DKBHeadShot.jpeg)
 
 Dominic “Kanoa” Borromeo is a rising senior, majoring in Computer Science at UH Manoa. Stepping away from D1 soccer in California allowed Kanoa to immerse himself in AI-related opportunities. Kanoa aspires to combine his CS and future JD degrees to help regulate AI policies.
 
