@@ -28,12 +28,12 @@ To run this project locally:
 # Meet the Team
 
 ## Kanoa Borromeo
-![Kanoa Borromeo](/DKBHeadShot.jpeg)
+![Kanoa Borromeo](./DKBHeadShot.jpeg)
 
 Dominic “Kanoa” Borromeo is a rising senior, majoring in Computer Science at UH Manoa. Stepping away from D1 soccer in California allowed Kanoa to immerse himself in AI-related opportunities. Kanoa aspires to combine his CS and future JD degrees to help regulate AI policies.
 
 ## Seth Ines
-![Seth Ines](/SethInesHeadShot.jpeg)
+![Seth Ines](./SethInesHeadShot.jpeg)
 
 Seth Ines is pursuing a Bachelor of Science in Computer Science within the Department of Information and Computer Sciences at the University of Hawaii. His career goal is to become a data analysis engineer, applying analytical and technical expertise to solve complex data challenges.
 
