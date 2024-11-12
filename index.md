@@ -14,51 +14,51 @@ Welcome to Hawaii Bites! This app helps students find their favorite meals on ca
 Hawaii Bites provides a consolidated menu from all food vendors at the University of Hawaii, including food trucks, Campus Center, and Paradise Palms.
 
 
-# Project Mockups
+# Project Pages Overview
 
-<div style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 20px;">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 30px; padding: 20px;">
 
-  <!-- Column 1: Landing Page -->
-  <div style="flex: 1; padding: 10px; max-width: 300px;">
+  <!-- Landing Page -->
+  <div style="max-width: 600px; text-align: center;">
     <h2>Landing Page</h2>
-    <img src="./public/LandingPage.jpeg" alt="Landing Page" style="max-width: 100%; height: auto; border-radius: 10px;">
-    <p>
+    <img src="./public/LandingPage.jpeg" alt="Landing Page" style="width: 100%; height: auto; border-radius: 10px;">
+    <p style="margin-top: 10px;">
       The first look at Hawaii Bites, giving users an overview of the app's features and inviting them to explore the best food options on campus.
     </p>
   </div>
 
-  <!-- Column 2: Home Page -->
-  <div style="flex: 1; padding: 10px; max-width: 300px;">
+  <!-- Home Page -->
+  <div style="max-width: 600px; text-align: center;">
     <h2>Home Page</h2>
-    <img src="./public/HomePage.jpeg" alt="Home Page" style="max-width: 100%; height: auto; border-radius: 10px;">
-    <p>
+    <img src="./public/HomePage.jpeg" alt="Home Page" style="width: 100%; height: auto; border-radius: 10px;">
+    <p style="margin-top: 10px;">
       The main hub for users, showcasing popular food options, daily specials, and easy access to different sections of the app.
     </p>
   </div>
 
-  <!-- Column 3: Today's Top Picks Page -->
-  <div style="flex: 1; padding: 10px; max-width: 300px;">
+  <!-- Today's Top Picks Page -->
+  <div style="max-width: 600px; text-align: center;">
     <h2>Today's Top Picks</h2>
-    <img src="./public/TodaysTopPicks.jpeg" alt="Today's Top Picks" style="max-width: 100%; height: auto; border-radius: 10px;">
-    <p>
+    <img src="./public/TodaysTopPicks.jpeg" alt="Today's Top Picks" style="width: 100%; height: auto; border-radius: 10px;">
+    <p style="margin-top: 10px;">
       Highlighting the most popular and trending food items for the day, curated based on user preferences and vendor updates.
     </p>
   </div>
 
-  <!-- Column 4: Foods Available Right Now Page -->
-  <div style="flex: 1; padding: 10px; max-width: 300px;">
+  <!-- Foods Available Right Now Page -->
+  <div style="max-width: 600px; text-align: center;">
     <h2>Foods Available Right Now</h2>
-    <img src="./public/FoodsAvailableRightNow.jpeg" alt="Foods Available Right Now" style="max-width: 100%; height: auto; border-radius: 10px;">
-    <p>
+    <img src="./public/FoodsAvailableRightNow.jpeg" alt="Foods Available Right Now" style="width: 100%; height: auto; border-radius: 10px;">
+    <p style="margin-top: 10px;">
       A live feed of all food options currently available on campus, updated in real-time to help users find meals instantly.
     </p>
   </div>
 
-  <!-- Column 5: User Profile Page -->
-  <div style="flex: 1; padding: 10px; max-width: 300px;">
+  <!-- User Profile Page -->
+  <div style="max-width: 600px; text-align: center;">
     <h2>User Profile</h2>
-    <img src="./public/UserProfile.jpeg" alt="User Profile" style="max-width: 100%; height: auto; border-radius: 10px;">
-    <p>
+    <img src="./public/UserProfile.jpeg" alt="User Profile" style="width: 100%; height: auto; border-radius: 10px;">
+    <p style="margin-top: 10px;">
       Personalized user profile page where users can set their preferences, dietary restrictions, and save favorite food items.
     </p>
   </div>
