@@ -27,15 +27,28 @@ To run this project locally:
 
 # Meet the Team
 
-## Kanoa Borromeo
-![Kanoa Borromeo](./public/DKBHeadShot.jpeg)
+<div style="display: flex; justify-content: space-between;">
 
-Dominic “Kanoa” Borromeo is a rising senior, majoring in Computer Science at UH Manoa. Stepping away from D1 soccer in California allowed Kanoa to immerse himself in AI-related opportunities. Kanoa aspires to combine his CS and future JD degrees to help regulate AI policies.
+  <!-- Column 1: Kanoa Borromeo -->
+  <div style="flex: 1; padding: 10px;">
+    <h2>Kanoa Borromeo</h2>
+    <img src="./public/DKBHeadShot.jpeg" alt="Kanoa Borromeo" style="max-width: 100%; height: auto;">
+    <p>
+      Dominic “Kanoa” Borromeo is a rising senior, majoring in Computer Science at UH Manoa. Stepping away from D1 soccer in California allowed Kanoa to immerse himself in AI-related opportunities. Kanoa aspires to combine his CS and future JD degrees to help regulate AI policies.
+    </p>
+  </div>
 
-## Seth Ines
-![Seth Ines](./public/SethInesHeadShot.jpeg)
+  <!-- Column 2: Seth Ines -->
+  <div style="flex: 1; padding: 10px;">
+    <h2>Seth Ines</h2>
+    <img src="./public/SethInesHeadShot.jpeg" alt="Seth Ines" style="max-width: 100%; height: auto;">
+    <p>
+      Seth Ines is pursuing a Bachelor of Science in Computer Science within the Department of Information and Computer Sciences at the University of Hawaii. His career goal is to become a data analysis engineer, applying analytical and technical expertise to solve complex data challenges.
+    </p>
+  </div>
 
-Seth Ines is pursuing a Bachelor of Science in Computer Science within the Department of Information and Computer Sciences at the University of Hawaii. His career goal is to become a data analysis engineer, applying analytical and technical expertise to solve complex data challenges.
+</div>
+
 
 
 
