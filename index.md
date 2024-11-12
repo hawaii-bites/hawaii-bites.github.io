@@ -1,19 +1,18 @@
 ---
 layout: default
-title: Manoa Munchies
+title: Hawaii Bites
 ---
 
-Welcome to Manoa Munchies! This app helps students find their favorite meals on campus.
+Welcome to Hawaii Bites! This app helps students find their favorite meals on campus.
 
 ## Navigation
 - [Overview](#overview)
 - [User Guide](#user-guide)
 - [Developer Guide](#developer-guide)
 - [Contact Us](#contact-us)
-- - [Overview](#overview)
 
 ## Overview
-Manoa Munchies provides a consolidated menu from all food vendors at the University of Hawaii, including food trucks, Campus Center, and Paradise Palms.
+Hawaii Bites provides a consolidated menu from all food vendors at the University of Hawaii, including food trucks, Campus Center, and Paradise Palms.
 
 ## User Guide
 - Navigate to "Foods Available Now" to see what’s being served.
@@ -56,5 +55,5 @@ To run this project locally:
 
 
 ## Contact Us
-- Email: **manoamunchiesuh@gmail.com**
+- Email: **hawaiibites@gmail.com**
 - GitHub: [Manoa Munchies Organization](https://github.com/manoa-munchies)
