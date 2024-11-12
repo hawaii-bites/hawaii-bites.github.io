@@ -1,6 +1,5 @@
 ---
 layout: default
-title: Hawaii Bites
 ---
 
 Welcome to Hawaii Bites! This app helps students find their favorite meals on campus.
