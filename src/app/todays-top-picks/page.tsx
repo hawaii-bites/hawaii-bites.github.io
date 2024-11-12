@@ -5,30 +5,30 @@ const TodaysTopPicksPage: React.FC = () => {
   const topPicks = [
     {
       id: 1,
-      name: 'Spicy Ahi Poke Bowl',
-      image: '/public/spicy-ahi-poke.jpg',
-      description: 'Fresh ahi tuna mixed with spicy mayo, served over sushi rice. A favorite from Campus Center.',
-      location: 'Campus Center',
+      name: 'Matcha Latte',
+      image: '/public/matcha-latte.jpg',
+      description: 'A refreshing and creamy matcha latte made with high-quality matcha powder and milk. A popular choice from Starbucks.',
+      location: 'Starbucks (Campus Center)',
     },
     {
       id: 2,
-      name: 'Garlic Shrimp Plate',
-      image: '/public/garlic-shrimp.jpg',
-      description: 'Juicy shrimp sautéed in garlic butter sauce, served with rice and mac salad. Available at Manoa Gardens.',
-      location: 'Manoa Gardens',
+      name: 'Orange Chicken',
+      image: '/public/orange-chicken.jpg',
+      description: 'Crispy chicken bites tossed in a sweet and tangy orange sauce. A crowd favorite from Panda Express.',
+      location: 'Panda Express (Campus Center)',
     },
     {
       id: 3,
-      name: 'Vegan Burrito',
-      image: '/public/vegan-burrito.jpg',
-      description: 'A delicious burrito filled with beans, rice, guacamole, and veggies. Perfect for a healthy lunch!',
-      location: 'Paradise Palms',
+      name: 'Lemongrass Banh Mi',
+      image: '/public/lemongrass-banhmi.jpg',
+      description: 'A Vietnamese-style baguette sandwich filled with lemongrass grilled chicken, pickled vegetables, and fresh herbs. A must-try from Ba-Le.',
+      location: 'Ba-Le (Paradise Palms)',
     },
   ];
 
   return (
-    <div style={{ padding: '20px', maxWidth: '1200px', margin: 'auto' }}>
-      <h1 style={{ textAlign: 'center', marginBottom: '20px' }}>Today's Top Picks</h1>
+    <div style={{ padding: '20px', maxWidth: '1200px', margin: 'auto', backgroundColor: '#004A32' }}>
+      <h1 style={{ textAlign: 'center', marginBottom: '20px', color: '#FFF' }}>Today's Top Picks</h1>
       <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around' }}>
         {topPicks.map((pick) => (
           <div
@@ -39,7 +39,8 @@ const TodaysTopPicksPage: React.FC = () => {
               padding: '10px',
               boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
               borderRadius: '10px',
-              backgroundColor: '#f9f9f9',
+              backgroundColor: '#1A3A2D',
+              color: '#FFF',
             }}
           >
             <img
@@ -47,9 +48,11 @@ const TodaysTopPicksPage: React.FC = () => {
               alt={pick.name}
               style={{ width: '100%', height: '200px', objectFit: 'cover', borderRadius: '10px' }}
             />
-            <h3 style={{ marginTop: '10px' }}>{pick.name}</h3>
-            <p style={{ color: '#666' }}>{pick.description}</p>
-            <p><strong>Location:</strong> {pick.location}</p>
+            <h3 style={{ marginTop: '10px', color: '#FFF' }}>{pick.name}</h3>
+            <p style={{ color: '#B5B5B5' }}>{pick.description}</p>
+            <p style={{ color: '#FFF' }}>
+              <strong>Location:</strong> {pick.location}
+            </p>
           </div>
         ))}
       </div>

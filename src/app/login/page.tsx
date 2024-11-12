@@ -13,7 +13,7 @@ export default function LoginPage() {
     e.preventDefault();
 
     const validEmail = 'dkb25@hawaii.edu';
-    const validPassword = 'MoonWalker769*';
+    const validPassword = 'SpaceCadet88';
     const validEmail2 = 'sethi3@hawaii.edu';
     const validPassword2 = 'Sword23';
 
