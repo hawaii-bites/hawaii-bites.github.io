@@ -126,4 +126,4 @@ To run this project locally:
 
 ## Contact Us
 - Email: **hawaiibites@gmail.com**
-- GitHub: [Hawaii Bites Organization](https://github.com/hawaii-bites)
+- GitHub: [Hawaii Bites Organization](https://github.com/hawaii-bites/hawaii-bites.github.io)
