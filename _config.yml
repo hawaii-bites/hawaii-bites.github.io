@@ -1,1 +1,14 @@
+title: Manoa Munchies
 theme: minima
+markdown: kramdown
+
+# Navbar configuration
+nav:
+  - title: "Overview"
+    url: "/#overview"
+  - title: "User Guide"
+    url: "/#user-guide"
+  - title: "Developer Guide"
+    url: "/#developer-guide"
+  - title: "Contact Us"
+    url: "/#contact-us"
