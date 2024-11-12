@@ -3,8 +3,6 @@ layout: default
 title: Manoa Munchies
 ---
 
-# Manoa Munchies
-
 Welcome to Manoa Munchies! This app helps students find their favorite meals on campus.
 
 ## Navigation
