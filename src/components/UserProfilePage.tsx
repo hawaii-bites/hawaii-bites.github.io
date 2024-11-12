@@ -17,11 +17,13 @@ const UserProfilePage: React.FC = () => {
     email: 'john.doe@example.com',
     likes: ['Chinese', 'Vegetarian'],
     dislikes: ['Spicy', 'Seafood'],
-    profilePicture: null, // Placeholder for profile picture
+    profilePicture: null,
   });
 
   const [newLike, setNewLike] = useState<string>('');
   const [newDislike, setNewDislike] = useState<string>('');
+  const [pendingLikes, setPendingLikes] = useState<string[]>([...user.likes]);
+  const [pendingDislikes, setPendingDislikes] = useState<string[]>([...user.dislikes]);
 
   // Profile picture upload handler
   const handleProfilePictureUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -38,27 +40,39 @@ const UserProfilePage: React.FC = () => {
     }
   };
 
-  // Handle adding and removing likes and dislikes
+  // Add a new food to the pending likes list
   const handleAddLike = () => {
-    if (newLike && !user.likes.includes(newLike)) {
-      setUser((prevUser) => ({ ...prevUser, likes: [...prevUser.likes, newLike] }));
+    if (newLike && !pendingLikes.includes(newLike)) {
+      setPendingLikes((prevLikes) => [...prevLikes, newLike]);
       setNewLike('');
     }
   };
 
+  // Add a new food to the pending dislikes list
   const handleAddDislike = () => {
-    if (newDislike && !user.dislikes.includes(newDislike)) {
-      setUser((prevUser) => ({ ...prevUser, dislikes: [...prevUser.dislikes, newDislike] }));
+    if (newDislike && !pendingDislikes.includes(newDislike)) {
+      setPendingDislikes((prevDislikes) => [...prevDislikes, newDislike]);
       setNewDislike('');
     }
   };
 
+  // Remove a food from the pending likes list
   const handleRemoveLike = (like: string) => {
-    setUser((prevUser) => ({ ...prevUser, likes: prevUser.likes.filter((item) => item !== like) }));
+    setPendingLikes((prevLikes) => prevLikes.filter((item) => item !== like));
   };
 
+  // Remove a food from the pending dislikes list
   const handleRemoveDislike = (dislike: string) => {
-    setUser((prevUser) => ({ ...prevUser, dislikes: prevUser.dislikes.filter((item) => item !== dislike) }));
+    setPendingDislikes((prevDislikes) => prevDislikes.filter((item) => item !== dislike));
+  };
+
+  // Submit pending changes
+  const handleSubmitChanges = () => {
+    setUser((prevUser) => ({
+      ...prevUser,
+      likes: pendingLikes,
+      dislikes: pendingDislikes,
+    }));
   };
 
   return (
@@ -103,7 +117,7 @@ const UserProfilePage: React.FC = () => {
           <div className="card bg-white p-5 shadow-md rounded-lg">
             <h2 className="text-2xl font-semibold text-var(--primary-green) mb-4">Foods You Like</h2>
             <ul className="space-y-2 mb-3">
-              {user.likes.map((like, index) => (
+              {pendingLikes.map((like, index) => (
                 <li key={index} className="flex justify-between items-center p-2 bg-gray-100 rounded-md">
                   {like}
                   <button className="text-red-600" onClick={() => handleRemoveLike(like)}>
@@ -112,7 +126,7 @@ const UserProfilePage: React.FC = () => {
                 </li>
               ))}
             </ul>
-            <div className="flex">
+            <div className="flex mb-3">
               <input
                 type="text"
                 className="flex-grow p-2 border border-gray-300 rounded-l-md"
@@ -130,7 +144,7 @@ const UserProfilePage: React.FC = () => {
           <div className="card bg-white p-5 shadow-md rounded-lg">
             <h2 className="text-2xl font-semibold text-var(--primary-green) mb-4">Foods You Don’t Like</h2>
             <ul className="space-y-2 mb-3">
-              {user.dislikes.map((dislike, index) => (
+              {pendingDislikes.map((dislike, index) => (
                 <li key={index} className="flex justify-between items-center p-2 bg-gray-100 rounded-md">
                   {dislike}
                   <button className="text-red-600" onClick={() => handleRemoveDislike(dislike)}>
@@ -139,7 +153,7 @@ const UserProfilePage: React.FC = () => {
                 </li>
               ))}
             </ul>
-            <div className="flex">
+            <div className="flex mb-3">
               <input
                 type="text"
                 className="flex-grow p-2 border border-gray-300 rounded-l-md"
@@ -153,6 +167,16 @@ const UserProfilePage: React.FC = () => {
             </div>
           </div>
         </section>
+
+        {/* Submit Changes Button */}
+        <div className="text-center mt-8">
+          <button
+            className="px-6 py-3 bg-var(--primary-green) text-white font-semibold rounded-lg hover:bg-var(--secondary-green)"
+            onClick={handleSubmitChanges}
+          >
+            Submit Changes
+          </button>
+        </div>
       </div>
 
       <Footer />
