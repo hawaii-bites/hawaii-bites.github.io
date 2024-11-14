@@ -150,6 +150,35 @@ To run this project locally:
 </div>
 
 
+## Team Contract
+Hawaii Bites Team Contract
+Team Members:
+
+Kanoa Borromeo
+Seth Ines
+Project: Hawaii Bites (ICS 314 Fall 2024)
+
+Objective: This contract outlines our team’s commitments, responsibilities, and communication plan to ensure a productive and efficient collaboration on the Hawaii Bites project.
+
+1. Meeting Schedule
+In-Person Meetings: We will meet every Tuesday and Thursday after ICS 314 class to discuss project updates, plan tasks, and address any challenges.
+Check-in on Discord: We will have nightly check-ins on Discord at 9 PM HST to provide progress updates, ask questions, and coordinate any additional work that needs to be completed.
+2. Task Distribution
+We will use GitHub Issues and the project board to manage tasks. Each task will be assigned to one of us, and we will work in branches named according to the issue (e.g., issue-XX).
+Tasks will be divided equally based on complexity and time commitment. Kanoa will focus on setting up the GitHub project board, managing deployments, and UI mockups. Seth will focus on initial deployment, setting up the landing page, and assisting with backend components.
+Any additional tasks will be discussed during our check-ins, and workload adjustments will be made as needed to ensure fairness.
+3. Communication Plan
+Primary communication will be through Discord for quick updates and questions.
+For more detailed discussions, we will use GitHub Issues and comments to document progress and any changes made to the project.
+If any issues or conflicts arise, we will address them immediately during our nightly check-ins to prevent delays.
+4. Work Quality and Deadlines
+Both team members agree to complete their assigned tasks according to the deadlines set in the GitHub Project Board.
+We will adhere to the ICS 314 course guidelines, including Issue-Driven Project Management (IDPM) practices, to ensure consistent progress and high-quality work.
+5. Code Review and Merging
+All work will be done in separate branches linked to GitHub Issues.
+Each branch will be reviewed by the other team member before merging into the main branch to ensure code quality and prevent conflicts.
+6. Conflict Resolution
+If any disagreements arise regarding task assignment or project direction, we will resolve them during our in-person meetings or, if needed, escalate the issue to our course instructor for guidance.
 
 
 
