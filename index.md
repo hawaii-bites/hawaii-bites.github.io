@@ -12,6 +12,7 @@ Welcome to Hawaii Bites! This app helps students find their favorite meals on ca
 - [User Guide](#user-guide)
 - [Developer Guide](#developer-guide)
 - [Meet the Team](#meet-the-team)
+- [Team Contract](#team-contract)
 - [Contact Us](#contact-us)
 
  
