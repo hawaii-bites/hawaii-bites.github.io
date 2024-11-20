@@ -55,9 +55,6 @@
     </p>
     <img src="./public/Admin-Dashboard.jpeg" alt="Admin Dashboard" style="width: 100%; height: auto; border-radius: 10px;">
     <ul style="text-align: left; margin-top: 10px;">
-      <li><strong>Manage Users:</strong> View, update, and control user access, including assigning or revoking vendor roles.</li>
-      <li><strong>Manage Vendors:</strong> Edit vendor profiles, add new vendors, and oversee existing vendor listings.</li>
-      <li><strong>Consolidated Menu Directory:</strong> Access the complete menu directory for all campus food locations and make necessary updates.</li>
     </ul>
   </div>
 
@@ -69,9 +66,6 @@
     </p>
     <img src="./public/VendorDashboard.jpeg" alt="Vendor Dashboard" style="width: 100%; height: auto; border-radius: 10px;">
     <ul style="text-align: left; margin-top: 10px;">
-      <li><strong>Today's Menu:</strong> Quickly update the menu items available for the current day, highlighting any specials.</li>
-      <li><strong>Weekly Menu:</strong> Plan and set the weekly menu, giving users a preview of upcoming offerings.</li>
-      <li><strong>Vendor Profile:</strong> Keep vendor information up-to-date, including contact details and location, for accurate customer interaction.</li>
     </ul>
   </div>
 </div>
