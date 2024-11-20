@@ -6,8 +6,8 @@ title: Hawaii Bites
 <!-- Navigation Tabs -->
 <nav style="background-color: #f8f9fa; padding: 10px; border-bottom: 1px solid #ddd;">
   <ul style="list-style: none; display: flex; justify-content: center; margin: 0; padding: 0; gap: 20px;">
-    <li><a href="index.html" style="text-decoration: none; font-weight: bold; color: #065f46;">Home</a></li>
-    <li><a href="screenshots.html" style="text-decoration: none; font-weight: bold; color: #065f46;">Screenshots of Progress</a></li>
+    <li><a href="index.html" style="text-decoration: none; font-weight: bold; color: #0000CD;">Home</a></li>
+    <li><a href="screenshots.html" style="text-decoration: none; font-weight: bold; color: #0000CD;">Progress</a></li>
   </ul>
 </nav>
 
