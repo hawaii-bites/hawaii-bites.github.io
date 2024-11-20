@@ -13,6 +13,7 @@ Welcome to Hawaii Bites! This app helps students find their favorite meals on ca
 - [Developer Guide](#developer-guide)
 - [Meet the Team](#meet-the-team)
 - [Team Contract](#team-contract)
+- [Project Management](#project-management)
 - [Contact Us](#contact-us)
 
  
@@ -182,6 +183,13 @@ Each branch will be reviewed by the other team member before merging into the ma
 If any disagreements arise regarding task assignment or project direction, we will resolve them during our in-person meetings or, if needed, escalate the issue to our course instructor for guidance.
 
 
+## Project Management Links
+
+- [Milestone 1 (M1) Project Board](https://github.com/orgs/hawaii-bites/projects/1): Displays completed issues for the first milestone. By the due date, all issues were moved out of BackLog or In Progress.
+- [Milestone 2 (M2) Project Board](https://github.com/orgs/hawaii-bites/projects/5/views/1): Outlines the issues to be addressed during the second milestone.
+
+## GitHub Hosting
+The project adheres to GitHub hosting guidelines, ensuring proper issue management, version control, and branch protection practices.
 
 
 
