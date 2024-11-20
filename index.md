@@ -6,9 +6,9 @@ title: Hawaii Bites
 <!-- Navigation Tabs -->
 <nav style="background-color: #f8f9fa; padding: 10px; border-bottom: 1px solid #ddd;">
   <ul style="list-style: none; display: flex; justify-content: center; margin: 0; padding: 0; gap: 20px;">
-    <li><a href="index.html" style="text-decoration: none; font-weight: bold; color: #ADD8E6;">Home</a></li>
-    <li><a href="screenshots.html" style="text-decoration: none; font-weight: bold; color: #ADD8E6;">Progress</a></li>
-    <li><a href="meet-the-team.html" style="text-decoration: none; font-weight: bold; color: #ADD8E6;">Meet the Team - Woof!</a></li>
+    <li><a href="index.html" style="text-decoration: none; font-weight: bold; color: #8B0000;">Home</a></li>
+    <li><a href="screenshots.html" style="text-decoration: none; font-weight: bold; color: #8B0000;">Progress</a></li>
+    <li><a href="meet-the-team.html" style="text-decoration: none; font-weight: bold; color: #8B0000;">Meet the Team - Woof!</a></li>
   </ul>
 </nav>
 
