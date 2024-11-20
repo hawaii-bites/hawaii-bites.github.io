@@ -1,7 +1,7 @@
-import { useState } from 'react';
-import Navbar from './Navbar';
-import Footer from './Footer';
-import Image from 'next/image';
+import { useState } from "react";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import Image from "next/image";
 
 interface UserProfile {
   name: string;
@@ -11,17 +11,39 @@ interface UserProfile {
   profilePicture: string | null;
 }
 
+const availableFoods = [
+  "Classic Dog",
+  "Falafel",
+  "Chicken Katsu",
+  "Orange Chicken",
+  "Loco Moco",
+  "Teriyaki Chicken",
+  "Vegetarian Sushi",
+  "Thai Curry",
+  "Acai Bowl",
+];
+
+const availableDislikes = [
+  "Spicy",
+  "Seafood",
+  "Pork",
+  "Beef",
+  "Sugar",
+  "Gluten",
+  "Lactose",
+];
+
 const UserProfilePage: React.FC = () => {
   const [user, setUser] = useState<UserProfile>({
-    name: 'John Doe',
-    email: 'john.doe@example.com',
-    likes: ['Chinese', 'Vegetarian'],
-    dislikes: ['Spicy', 'Seafood'],
+    name: "John Doe",
+    email: "john.doe@example.com",
+    likes: ["Vegetarian Sushi", "Chicken Katsu"],
+    dislikes: ["Spicy", "Seafood"],
     profilePicture: null,
   });
 
-  const [newLike, setNewLike] = useState<string>('');
-  const [newDislike, setNewDislike] = useState<string>('');
+  const [newLike, setNewLike] = useState<string>("");
+  const [newDislike, setNewDislike] = useState<string>("");
   const [pendingLikes, setPendingLikes] = useState<string[]>([...user.likes]);
   const [pendingDislikes, setPendingDislikes] = useState<string[]>([...user.dislikes]);
 
@@ -42,17 +64,21 @@ const UserProfilePage: React.FC = () => {
 
   // Add a new food to the pending likes list
   const handleAddLike = () => {
-    if (newLike && !pendingLikes.includes(newLike)) {
+    if (newLike && !pendingLikes.includes(newLike) && availableFoods.includes(newLike)) {
       setPendingLikes((prevLikes) => [...prevLikes, newLike]);
-      setNewLike('');
+      setNewLike("");
+    } else {
+      alert("Please select a valid food item from the available list.");
     }
   };
 
   // Add a new food to the pending dislikes list
   const handleAddDislike = () => {
-    if (newDislike && !pendingDislikes.includes(newDislike)) {
+    if (newDislike && !pendingDislikes.includes(newDislike) && availableDislikes.includes(newDislike)) {
       setPendingDislikes((prevDislikes) => [...prevDislikes, newDislike]);
-      setNewDislike('');
+      setNewDislike("");
+    } else {
+      alert("Please select a valid dislike from the available list.");
     }
   };
 
@@ -73,29 +99,29 @@ const UserProfilePage: React.FC = () => {
       likes: pendingLikes,
       dislikes: pendingDislikes,
     }));
+    alert("Your changes have been saved!");
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-var(--background)">
+    <div className="min-h-screen flex flex-col bg-gray-50">
       <Navbar />
 
       <div className="container mx-auto p-5 bg-white rounded-lg shadow-md mt-10">
-        <h1 className="text-4xl font-bold text-center text-var(--primary-green) mb-8">
+        <h1 className="text-4xl font-extrabold text-center text-green-800 mb-8">
           Set Your Food Preferences
         </h1>
 
         {/* Profile Picture and Account Information Section */}
         <section className="flex flex-col items-center mb-8">
-          {/* Profile Picture */}
           <div className="w-32 h-32 mb-4 relative">
             <Image
-              src={user.profilePicture || '/placeholder.png'} // Default placeholder if no picture
+              src={user.profilePicture || "/placeholder.png"} // Default placeholder if no picture
               alt="Profile Picture"
-              className="rounded-full object-cover border-4 border-var(--primary-green)"
+              className="rounded-full object-cover border-4 border-green-700 shadow-lg"
               width={128}
               height={128}
             />
-            <label className="absolute bottom-0 right-0 bg-var(--primary-green) text-white p-1 rounded-full cursor-pointer">
+            <label className="absolute bottom-0 right-0 bg-green-700 text-white p-2 rounded-full cursor-pointer">
               <input type="file" accept="image/*" className="hidden" onChange={handleProfilePictureUpload} />
               Upload
             </label>
@@ -103,9 +129,9 @@ const UserProfilePage: React.FC = () => {
 
           {/* Account Info */}
           <div className="text-center">
-            <p className="text-xl font-semibold">{user.name}</p>
-            <p className="text-gray-600">{user.email}</p>
-            <button className="mt-3 px-4 py-2 bg-var(--secondary-green) text-white rounded-lg hover:bg-var(--primary-green)">
+            <p className="text-2xl font-semibold text-gray-800">{user.name}</p>
+            <p className="text-lg text-gray-600">{user.email}</p>
+            <button className="mt-3 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-800">
               Edit Account Info
             </button>
           </div>
@@ -113,14 +139,13 @@ const UserProfilePage: React.FC = () => {
 
         {/* Likes and Dislikes Section */}
         <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Foods You Like */}
-          <div className="card bg-white p-5 shadow-md rounded-lg">
-            <h2 className="text-2xl font-semibold text-var(--primary-green) mb-4">Foods You Like</h2>
+          <div className="card bg-gray-50 p-5 shadow-lg rounded-lg">
+            <h2 className="text-2xl font-bold text-green-700 mb-4">Foods You Like</h2>
             <ul className="space-y-2 mb-3">
               {pendingLikes.map((like, index) => (
-                <li key={index} className="flex justify-between items-center p-2 bg-gray-100 rounded-md">
-                  {like}
-                  <button className="text-red-600" onClick={() => handleRemoveLike(like)}>
+                <li key={index} className="flex justify-between items-center p-3 bg-gray-200 rounded-lg">
+                  <span className="text-lg text-gray-800 font-medium">{like}</span>
+                  <button className="text-red-700 hover:underline" onClick={() => handleRemoveLike(like)}>
                     Remove
                   </button>
                 </li>
@@ -129,25 +154,30 @@ const UserProfilePage: React.FC = () => {
             <div className="flex mb-3">
               <input
                 type="text"
-                className="flex-grow p-2 border border-gray-300 rounded-l-md"
+                className="flex-grow p-3 border border-gray-300 rounded-l-lg"
                 placeholder="Add a food you like"
                 value={newLike}
                 onChange={(e) => setNewLike(e.target.value)}
+                list="available-foods"
               />
-              <button className="px-4 py-2 bg-var(--primary-green) text-white rounded-r-md" onClick={handleAddLike}>
+              <datalist id="available-foods">
+                {availableFoods.map((food, index) => (
+                  <option key={index} value={food} />
+                ))}
+              </datalist>
+              <button className="px-5 py-3 bg-green-600 text-white rounded-r-lg hover:bg-green-800" onClick={handleAddLike}>
                 Add
               </button>
             </div>
           </div>
 
-          {/* Foods You Don’t Like */}
-          <div className="card bg-white p-5 shadow-md rounded-lg">
-            <h2 className="text-2xl font-semibold text-var(--primary-green) mb-4">Foods You Don’t Like</h2>
+          <div className="card bg-gray-50 p-5 shadow-lg rounded-lg">
+            <h2 className="text-2xl font-bold text-green-700 mb-4">Foods You Don’t Like</h2>
             <ul className="space-y-2 mb-3">
               {pendingDislikes.map((dislike, index) => (
-                <li key={index} className="flex justify-between items-center p-2 bg-gray-100 rounded-md">
-                  {dislike}
-                  <button className="text-red-600" onClick={() => handleRemoveDislike(dislike)}>
+                <li key={index} className="flex justify-between items-center p-3 bg-gray-200 rounded-lg">
+                  <span className="text-lg text-gray-800 font-medium">{dislike}</span>
+                  <button className="text-red-700 hover:underline" onClick={() => handleRemoveDislike(dislike)}>
                     Remove
                   </button>
                 </li>
@@ -156,22 +186,27 @@ const UserProfilePage: React.FC = () => {
             <div className="flex mb-3">
               <input
                 type="text"
-                className="flex-grow p-2 border border-gray-300 rounded-l-md"
+                className="flex-grow p-3 border border-gray-300 rounded-l-lg"
                 placeholder="Add a food you dislike"
                 value={newDislike}
                 onChange={(e) => setNewDislike(e.target.value)}
+                list="available-dislikes"
               />
-              <button className="px-4 py-2 bg-var(--primary-green) text-white rounded-r-md" onClick={handleAddDislike}>
+              <datalist id="available-dislikes">
+                {availableDislikes.map((dislike, index) => (
+                  <option key={index} value={dislike} />
+                ))}
+              </datalist>
+              <button className="px-5 py-3 bg-green-600 text-white rounded-r-lg hover:bg-green-800" onClick={handleAddDislike}>
                 Add
               </button>
             </div>
           </div>
         </section>
 
-        {/* Submit Changes Button */}
         <div className="text-center mt-8">
           <button
-            className="px-6 py-3 bg-var(--primary-green) text-white font-semibold rounded-lg hover:bg-var(--secondary-green)"
+            className="px-6 py-3 bg-green-600 text-white text-lg font-bold rounded-lg hover:bg-green-800 shadow-md"
             onClick={handleSubmitChanges}
           >
             Submit Changes
