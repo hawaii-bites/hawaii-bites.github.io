@@ -10,6 +10,7 @@ title: Hawaii Bites
     <li><a href="screenshots.html" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Progress</a></li>
     <li><a href="meet-the-team.html" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Meet the Team - Woof!</a></li>
     <li><a href="project-links.html" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Project Links</a></li>
+    <li><a href="deployment.html" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Deployment</a></li>
   </ul>
 </nav>
 
