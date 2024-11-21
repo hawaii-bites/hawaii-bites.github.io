@@ -9,8 +9,10 @@ title: Hawaii Bites
     <li><a href="index.html" style="text-decoration: none; font-weight: bold; color: #8B0000;">Home</a></li>
     <li><a href="screenshots.html" style="text-decoration: none; font-weight: bold; color: #8B0000;">Progress</a></li>
     <li><a href="meet-the-team.html" style="text-decoration: none; font-weight: bold; color: #8B0000;">Meet the Team - Woof!</a></li>
+    <li><a href="project-links.html" style="text-decoration: none; font-weight: bold; color: #8B0000;">Project Links</a></li>
   </ul>
 </nav>
+
 
 <!-- Page Content -->
 Welcome to Hawaii Bites! This app helps students find their favorite meals on campus.
