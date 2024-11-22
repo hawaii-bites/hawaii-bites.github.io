@@ -3,6 +3,15 @@ layout: default
 title: Hawaii Bites
 ---
 
+<!-- Page Header -->
+<header style="display: flex; align-items: center; justify-content: center; margin-top: 20px;">
+  <img src="./public/pizza-dog.jpeg" alt="Pizza Dog" style="width: 50px; height: auto; margin-right: 10px;">
+  <h1 style="color: #8B0000; font-size: 2.5em; font-family: 'Arial', sans-serif; margin: 0;">Hawaii Bites</h1>
+</header>
+<p style="text-align: center; font-size: 1.2em; color: #333; margin-bottom: 20px;">Helping students find their favorite meals on campus.</p>
+
+---
+
 <!-- Navigation -->
 <section id="navigation" style="margin: 20px 0; padding: 20px;">
   <h2 style="text-align: left; color: #8B0000; font-family: 'Arial', sans-serif;">Navigation</h2>
@@ -35,13 +44,6 @@ title: Hawaii Bites
     </ul>
   </nav>
 </section>
-
-<!-- Page Header -->
-<header style="display: flex; align-items: center; justify-content: center; margin-top: 20px;">
-  <img src="./public/pizza-dog.jpeg" alt="Pizza Dog" style="width: 50px; height: auto; margin-right: 10px;">
-  <h1 style="color: #8B0000; font-size: 2.5em; font-family: 'Arial', sans-serif; margin: 0;">Hawaii Bites</h1>
-</header>
-<p style="text-align: center; font-size: 1.2em; color: #333; margin-bottom: 20px;">Helping students find their favorite meals on campus.</p>
 
 ---
 
