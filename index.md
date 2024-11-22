@@ -4,20 +4,37 @@ title: Hawaii Bites
 ---
 
 <!-- Navigation -->
-<nav style="background-color: #f8f9fa; padding: 20px; border-bottom: 2px solid #ddd; margin-bottom: 20px;">
-  <h2 style="text-align: center; color: #8B0000; margin-bottom: 15px; font-family: 'Arial', sans-serif;">Navigation</h2>
-  <ul style="list-style: none; padding: 0; margin: 0; text-align: center;">
-    <li style="margin-bottom: 10px;"><a href="#overview" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Overview</a></li>
-    <li style="margin-bottom: 10px;"><a href="#github-organization" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">GitHub Organization</a></li>
-    <li style="margin-bottom: 10px;"><a href="#issue-boards" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Issue Boards</a></li>
-    <li style="margin-bottom: 10px;"><a href="#up-to-date-screenshots" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Screenshots</a></li>
-    <li style="margin-bottom: 10px;"><a href="#meet-the-team" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Meet the Team</a></li>
-    <li style="margin-bottom: 10px;"><a href="#team-contract" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Team Contract</a></li>
-    <li style="margin-bottom: 10px;"><a href="#deployment" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Deployment</a></li>
-    <li style="margin-bottom: 10px;"><a href="#contact-us" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Contact Us</a></li>
-  </ul>
-</nav>
-
+<section id="navigation" style="margin: 20px 0; padding: 20px;">
+  <h2 style="text-align: left; color: #8B0000; font-family: 'Arial', sans-serif;">Navigation</h2>
+  <nav style="margin: 10px 0; padding-left: 10px;">
+    <ul style="list-style: none; padding: 0; margin: 0; font-size: 1em;">
+      <li style="margin-bottom: 10px;">
+        <a href="#overview" style="text-decoration: none; font-weight: bold; color: #8B0000;">Overview</a>
+      </li>
+      <li style="margin-bottom: 10px;">
+        <a href="#github-organization" style="text-decoration: none; font-weight: bold; color: #8B0000;">GitHub Organization</a>
+      </li>
+      <li style="margin-bottom: 10px;">
+        <a href="#issue-boards" style="text-decoration: none; font-weight: bold; color: #8B0000;">Issue Boards</a>
+      </li>
+      <li style="margin-bottom: 10px;">
+        <a href="#up-to-date-screenshots" style="text-decoration: none; font-weight: bold; color: #8B0000;">Screenshots</a>
+      </li>
+      <li style="margin-bottom: 10px;">
+        <a href="#meet-the-team" style="text-decoration: none; font-weight: bold; color: #8B0000;">Meet the Team</a>
+      </li>
+      <li style="margin-bottom: 10px;">
+        <a href="#team-contract" style="text-decoration: none; font-weight: bold; color: #8B0000;">Team Contract</a>
+      </li>
+      <li style="margin-bottom: 10px;">
+        <a href="#deployment" style="text-decoration: none; font-weight: bold; color: #8B0000;">Deployment</a>
+      </li>
+      <li style="margin-bottom: 10px;">
+        <a href="#contact-us" style="text-decoration: none; font-weight: bold; color: #8B0000;">Contact Us</a>
+      </li>
+    </ul>
+  </nav>
+</section>
 
 <!-- Page Header -->
 <header style="display: flex; align-items: center; justify-content: center; margin-top: 20px;">
