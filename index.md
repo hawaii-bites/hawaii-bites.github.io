@@ -48,17 +48,31 @@ Hawaii Bites provides a consolidated menu from all food vendors at the Universit
 <section id="up-to-date-screenshots" style="padding: 20px;">
   <h2 style="text-align: center; color: #8B0000; font-family: 'Arial', sans-serif; margin-bottom: 20px;">Up-to-date Screenshots</h2>
 
-  <!-- Navigation for Screenshots -->
-  <nav style="margin-bottom: 30px; text-align: center;">
-    <h3 style="color: #8B0000;">Screenshots Navigation</h3>
-    <ul style="list-style: none; padding: 0; text-align: center;">
-      <li style="margin-bottom: 10px;"><a href="#landing-page" style="text-decoration: none; font-weight: bold; color: #065f46;">Landing Page</a></li>
-      <li style="margin-bottom: 10px;"><a href="#home-page" style="text-decoration: none; font-weight: bold; color: #065f46;">Home Page</a></li>
-      <li style="margin-bottom: 10px;"><a href="#todays-top-picks-page" style="text-decoration: none; font-weight: bold; color: #065f46;">Today's Top Picks</a></li>
-      <li style="margin-bottom: 10px;"><a href="#foods-available-right-now-page" style="text-decoration: none; font-weight: bold; color: #065f46;">Foods Available Right Now</a></li>
-      <li style="margin-bottom: 10px;"><a href="#user-profile-page" style="text-decoration: none; font-weight: bold; color: #065f46;">User Profile</a></li>
-      <li style="margin-bottom: 10px;"><a href="#admin-dashboard-page" style="text-decoration: none; font-weight: bold; color: #065f46;">Admin Dashboard</a></li>
-      <li style="margin-bottom: 10px;"><a href="#vendor-dashboard-page" style="text-decoration: none; font-weight: bold; color: #065f46;">Vendor Dashboard</a></li>
+  <!-- Navigation -->
+  <nav style="margin: 20px 0; padding-left: 10px;">
+    <h3 style="text-align: left; color: #8B0000; font-family: 'Arial', sans-serif;">Screenshots Navigation</h3>
+    <ul style="list-style: none; padding: 0; margin: 0; font-size: 1em;">
+      <li style="margin-bottom: 10px;">
+        <a href="#landing-page" style="text-decoration: none; color: #065f46;">Landing Page</a>
+      </li>
+      <li style="margin-bottom: 10px;">
+        <a href="#home-page" style="text-decoration: none; color: #065f46;">Home Page</a>
+      </li>
+      <li style="margin-bottom: 10px;">
+        <a href="#todays-top-picks-page" style="text-decoration: none; color: #065f46;">Today's Top Picks</a>
+      </li>
+      <li style="margin-bottom: 10px;">
+        <a href="#foods-available-right-now-page" style="text-decoration: none; color: #065f46;">Foods Available Right Now</a>
+      </li>
+      <li style="margin-bottom: 10px;">
+        <a href="#user-profile-page" style="text-decoration: none; color: #065f46;">User Profile</a>
+      </li>
+      <li style="margin-bottom: 10px;">
+        <a href="#admin-dashboard-page" style="text-decoration: none; color: #065f46;">Admin Dashboard</a>
+      </li>
+      <li style="margin-bottom: 10px;">
+        <a href="#vendor-dashboard-page" style="text-decoration: none; color: #065f46;">Vendor Dashboard</a>
+      </li>
     </ul>
   </nav>
 
