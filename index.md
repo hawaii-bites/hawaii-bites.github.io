@@ -39,6 +39,9 @@ title: Hawaii Bites
         <a href="#deployment" style="text-decoration: none; font-weight: bold; color: #8B0000;">Deployment</a>
       </li>
       <li style="margin-bottom: 10px;">
+        <a href="#github-hosting-guidelines" style="text-decoration: none; font-weight: bold; color: #8B0000;">GitHub Hosting Guidlines for Efficient Project Management</a>
+      </li>
+      <li style="margin-bottom: 10px;">
         <a href="#contact-us" style="text-decoration: none; font-weight: bold; color: #8B0000;">Contact Us</a>
       </li>
     </ul>
@@ -206,6 +209,17 @@ This contract outlines the team’s commitments, responsibilities, and collabora
 - [Deployment Application](https://hawaii-bites.vercel.app/)
 
 ---
+
+## GitHub Hosting Guidlines for Efficient Project Management
+
+To ensure compliance with GitHub hosting guidelines for project management, we are actively adhering to their recommended practices across several dimensions of our project setup and development workflow. By hosting all source code necessary for building our application while excluding derived files, we ensure that new developers can easily set up the system without additional dependencies. We leverage a .gitignore file to prevent derived files like node_modules/ and other unnecessary artifacts (e.g., .DS_Store on Mac systems or development-specific settings files) from being included in our repository. This maintains a clean and efficient project structure and adheres to GitHub’s best practices for managing repositories.
+
+Furthermore, our project utilizes a GitHub organization to centralize team-based development. By creating a dedicated organization with an appropriate and professional name, we streamline collaboration and maintain a cohesive identity for the project. All team members have been invited to the organization and granted "owner" status, ensuring equal participation and administrative access for efficient project management. Additionally, we have established two separate repositories under the organization: one for hosting the project’s documentation and public-facing home page (hawaii-bites.github.io) and another for application development. The index.md file in the documentation repository is designed to provide a comprehensive overview of the system, including user guides with screenshots, developer setup instructions, community feedback, development history, and contact details. This separation of concerns ensures that the documentation remains clear and accessible, while the application repository is optimized for active development.
+
+By following these guidelines, we not only maximize the benefits of GitHub’s hosting features but also create a robust foundation for collaborative and professional project development.
+
+---
+
 
 ## Contact Us
 
