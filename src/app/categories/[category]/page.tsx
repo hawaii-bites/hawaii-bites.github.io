@@ -4,7 +4,7 @@ import React from "react";
 import { useParams } from "next/navigation";
 
 // Example menu items
-const menuItems = [
+const menuItems: { name: string; category: string; vendor: string; description: string }[] = [
   { name: "Apple 'n Greens Smoothie", category: "healthy", vendor: "Jamba Juice", description: "A refreshing plant-based smoothie." },
   { name: "Sweet Mango Sago", category: "healthy", vendor: "Saap Saap HI", description: "Delicious mango dessert with sago." },
   { name: "Reggi Dog", category: "vegetarian", vendor: "Veggi Dogs", description: "Topped with sauerkraut, spicy chili mayo, and crispy onion." },
@@ -16,7 +16,7 @@ const menuItems = [
 ];
 
 const CategoryPage = () => {
-  const params = useParams();
+  const params: { category?: string } = useParams();
   const category = params?.category;
 
   if (!category) {
@@ -29,12 +29,12 @@ const CategoryPage = () => {
   }
 
   // Filter items based on the category from the URL
-  const filteredItems = menuItems.filter((item) => item.category === category.toLowerCase());
+  const filteredItems = menuItems.filter((item) => item.category.toLowerCase() === category.toLowerCase());
 
   if (filteredItems.length === 0) {
     return (
       <div className="container mx-auto py-10 text-center">
-        <h1 className="text-4xl font-bold capitalize mb-4">Category: {category}</h1>
+        <h1 className="text-4xl font-bold capitalize mb-4">Category: {category.charAt(0).toUpperCase() + category.slice(1)}</h1>
         <p className="text-gray-600">No items found for this category.</p>
       </div>
     );
@@ -42,7 +42,9 @@ const CategoryPage = () => {
 
   return (
     <div className="container mx-auto py-10">
-      <h1 className="text-4xl font-bold capitalize text-center mb-8">{category.charAt(0).toUpperCase() + category.slice(1)} Options</h1>
+      <h1 className="text-4xl font-bold capitalize text-center mb-8">
+        {category.charAt(0).toUpperCase() + category.slice(1)} Options
+      </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {filteredItems.map((item, index) => (
           <div key={index} className="bg-white shadow-md p-6 rounded-lg border">
