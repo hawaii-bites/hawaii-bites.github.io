@@ -39,7 +39,7 @@ title: Hawaii Bites
         <a href="#deployment" style="text-decoration: none; font-weight: bold; color: #8B0000;">Deployment</a>
       </li>
       <li style="margin-bottom: 10px;">
-        <a href="#github-hosting-guidelines" style="text-decoration: none; font-weight: bold; color: #8B0000;">GitHub Hosting Guidlines for Efficient Project Management</a>
+        <a href="#github-hosting-guidelines-for-efficient-project-management" style="text-decoration: none; font-weight: bold; color: #8B0000;">GitHub Hosting Guidlines for Efficient Project Management</a>
       </li>
       <li style="margin-bottom: 10px;">
         <a href="#contact-us" style="text-decoration: none; font-weight: bold; color: #8B0000;">Contact Us</a>
