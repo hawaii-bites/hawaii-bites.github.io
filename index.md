@@ -30,6 +30,11 @@ Hawaii Bites provides a consolidated menu from all food vendors at the Universit
 
 ---
 
+## GitHub Organization
+- [Organization Page](https://github.com/hawaii-bites/hawaii-bites.github.io)  
+
+
+
 ## Up-to-date Screenshots
 
 <div style="display: flex; flex-direction: column; align-items: center; gap: 30px; padding: 20px;">
