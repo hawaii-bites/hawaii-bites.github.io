@@ -5,12 +5,13 @@ title: Hawaii Bites
 
 <!-- Navigation Tabs -->
 <nav style="background-color: #f8f9fa; padding: 15px; border-bottom: 2px solid #ddd; margin-bottom: 20px;">
-  <ul style="list-style: none; display: flex; justify-content: center; margin: 0; padding: 0; gap: 30px;">
+  <h2 style="text-align: center; color: #8B0000; margin-bottom: 10px; font-family: 'Arial', sans-serif;">Navigation</h2>
+  <ul style="list-style: none; display: flex; flex-wrap: wrap; justify-content: center; margin: 0; padding: 0; gap: 20px;">
     <li><a href="#overview" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Overview</a></li>
     <li><a href="#github-organization" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">GitHub Organization</a></li>
-    <li><a href="#issue-boards" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Issue Boards (M1 , M2)</a></li>
+    <li><a href="#issue-boards" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Issue Boards</a></li>
     <li><a href="#up-to-date-screenshots" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Screenshots</a></li>
-    <li><a href="#meet-the-team-woof!" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Meet the Team</a></li>
+    <li><a href="#meet-the-team" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Meet the Team</a></li>
     <li><a href="#team-contract" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Team Contract</a></li>
     <li><a href="#deployment" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Deployment</a></li>
     <li><a href="#contact-us" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Contact Us</a></li>
