@@ -27,6 +27,9 @@ title: Hawaii Bites
         <a href="#issue-boards" style="text-decoration: none; font-weight: bold; color: #8B0000;">Issue Boards</a>
       </li>
       <li style="margin-bottom: 10px;">
+        <a href="#team-contract-link" style="text-decoration: none; font-weight: bold; color: #8B0000;">Team Contract Link</a>
+      </li>
+      <li style="margin-bottom: 10px;">
         <a href="#screenshots" style="text-decoration: none; font-weight: bold; color: #8B0000;">Screenshots</a>
       </li>
       <li style="margin-bottom: 10px;">
