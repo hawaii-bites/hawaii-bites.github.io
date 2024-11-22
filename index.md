@@ -3,20 +3,21 @@ layout: default
 title: Hawaii Bites
 ---
 
-<!-- Navigation Tabs -->
-<nav style="background-color: #f8f9fa; padding: 15px; border-bottom: 2px solid #ddd; margin-bottom: 20px;">
-  <h2 style="text-align: center; color: #8B0000; margin-bottom: 10px; font-family: 'Arial', sans-serif;">Navigation</h2>
-  <ul style="list-style: none; display: flex; flex-wrap: wrap; justify-content: center; margin: 0; padding: 0; gap: 20px;">
-    <li><a href="#overview" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Overview</a></li>
-    <li><a href="#github-organization" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">GitHub Organization</a></li>
-    <li><a href="#issue-boards" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Issue Boards</a></li>
-    <li><a href="#up-to-date-screenshots" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Screenshots</a></li>
-    <li><a href="#meet-the-team" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Meet the Team</a></li>
-    <li><a href="#team-contract" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Team Contract</a></li>
-    <li><a href="#deployment" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Deployment</a></li>
-    <li><a href="#contact-us" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Contact Us</a></li>
+<!-- Navigation -->
+<nav style="background-color: #f8f9fa; padding: 20px; border-bottom: 2px solid #ddd; margin-bottom: 20px;">
+  <h2 style="text-align: center; color: #8B0000; margin-bottom: 15px; font-family: 'Arial', sans-serif;">Navigation</h2>
+  <ul style="list-style: none; padding: 0; margin: 0; text-align: center;">
+    <li style="margin-bottom: 10px;"><a href="#overview" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Overview</a></li>
+    <li style="margin-bottom: 10px;"><a href="#github-organization" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">GitHub Organization</a></li>
+    <li style="margin-bottom: 10px;"><a href="#issue-boards" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Issue Boards</a></li>
+    <li style="margin-bottom: 10px;"><a href="#up-to-date-screenshots" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Screenshots</a></li>
+    <li style="margin-bottom: 10px;"><a href="#meet-the-team" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Meet the Team</a></li>
+    <li style="margin-bottom: 10px;"><a href="#team-contract" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Team Contract</a></li>
+    <li style="margin-bottom: 10px;"><a href="#deployment" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Deployment</a></li>
+    <li style="margin-bottom: 10px;"><a href="#contact-us" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Contact Us</a></li>
   </ul>
 </nav>
+
 
 <!-- Page Header -->
 <header style="display: flex; align-items: center; justify-content: center; margin-top: 20px;">
@@ -43,62 +44,78 @@ Hawaii Bites provides a consolidated menu from all food vendors at the Universit
 
 ## Up-to-date Screenshots
 
-<div style="display: flex; flex-direction: column; align-items: center; gap: 30px; padding: 20px;">
+<!-- Up-to-date Screenshots Section -->
+<section id="up-to-date-screenshots" style="padding: 20px;">
+  <h2 style="text-align: center; color: #8B0000; font-family: 'Arial', sans-serif; margin-bottom: 20px;">Up-to-date Screenshots</h2>
+
+  <!-- Navigation for Screenshots -->
+  <nav style="margin-bottom: 30px; text-align: center;">
+    <h3 style="color: #8B0000;">Screenshots Navigation</h3>
+    <ul style="list-style: none; padding: 0; text-align: center;">
+      <li style="margin-bottom: 10px;"><a href="#landing-page" style="text-decoration: none; font-weight: bold; color: #065f46;">Landing Page</a></li>
+      <li style="margin-bottom: 10px;"><a href="#home-page" style="text-decoration: none; font-weight: bold; color: #065f46;">Home Page</a></li>
+      <li style="margin-bottom: 10px;"><a href="#todays-top-picks-page" style="text-decoration: none; font-weight: bold; color: #065f46;">Today's Top Picks</a></li>
+      <li style="margin-bottom: 10px;"><a href="#foods-available-right-now-page" style="text-decoration: none; font-weight: bold; color: #065f46;">Foods Available Right Now</a></li>
+      <li style="margin-bottom: 10px;"><a href="#user-profile-page" style="text-decoration: none; font-weight: bold; color: #065f46;">User Profile</a></li>
+      <li style="margin-bottom: 10px;"><a href="#admin-dashboard-page" style="text-decoration: none; font-weight: bold; color: #065f46;">Admin Dashboard</a></li>
+      <li style="margin-bottom: 10px;"><a href="#vendor-dashboard-page" style="text-decoration: none; font-weight: bold; color: #065f46;">Vendor Dashboard</a></li>
+    </ul>
+  </nav>
 
   <!-- Landing Page -->
-  <div id="landing-page" style="max-width: 600px; text-align: center;">
-    <h2>Landing Page</h2>
+  <div id="landing-page" style="max-width: 600px; text-align: center; margin-bottom: 20px;">
+    <h3>Landing Page</h3>
     <p>The first look at Hawaii Bites, giving users an overview of the app's features and inviting them to explore the best food options on campus.</p>
     <img src="./public/LandingPage.jpeg" alt="Landing Page" style="width: 100%; height: auto; border-radius: 10px;">
   </div>
 
   <!-- Home Page -->
-  <div id="home-page" style="max-width: 600px; text-align: center;">
-    <h2>Home Page</h2>
+  <div id="home-page" style="max-width: 600px; text-align: center; margin-bottom: 20px;">
+    <h3>Home Page</h3>
     <p>The main hub for users, showcasing popular food options, daily specials, and easy access to different sections of the app.</p>
-    <img src="./public/HomePage.jpeg" alt="Home Page" style="width: 100%; height: auto; border-radius: 10px;">
-    <p style="margin-top: 20px;">Screenshot Version 2:</p>
+    <img src="./public/HomePage.jpeg" alt="Home Page" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 10px;">
+    <p>Screenshot Version 2:</p>
     <img src="./public/HomePage-2.jpeg" alt="Home Page Version 2" style="width: 100%; height: auto; border-radius: 10px;">
   </div>
 
   <!-- Today's Top Picks Page -->
-  <div id="todays-top-picks-page" style="max-width: 600px; text-align: center;">
-    <h2>Today's Top Picks</h2>
+  <div id="todays-top-picks-page" style="max-width: 600px; text-align: center; margin-bottom: 20px;">
+    <h3>Today's Top Picks</h3>
     <p>Highlighting the most popular and trending food items for the day, curated based on user preferences and vendor updates.</p>
     <img src="./public/TodaysTopPicks.jpeg" alt="Today's Top Picks" style="width: 100%; height: auto; border-radius: 10px;">
   </div>
 
   <!-- Foods Available Right Now Page -->
-  <div id="foods-available-right-now-page" style="max-width: 600px; text-align: center;">
-    <h2>Foods Available Right Now</h2>
+  <div id="foods-available-right-now-page" style="max-width: 600px; text-align: center; margin-bottom: 20px;">
+    <h3>Foods Available Right Now</h3>
     <p>A live feed of all food options currently available on campus, updated in real-time to help users find meals instantly.</p>
     <img src="./public/FoodsAvailableRightNow.jpeg" alt="Foods Available Right Now" style="width: 100%; height: auto; border-radius: 10px;">
   </div>
 
   <!-- User Profile Page -->
-  <div id="user-profile-page" style="max-width: 600px; text-align: center;">
-    <h2>User Profile</h2>
+  <div id="user-profile-page" style="max-width: 600px; text-align: center; margin-bottom: 20px;">
+    <h3>User Profile</h3>
     <p>Personalized user profile page where users can set their preferences, dietary restrictions, and save favorite food items.</p>
-    <img src="./public/UserProfile.jpeg" alt="User Profile" style="width: 100%; height: auto; border-radius: 10px;">
-    <p style="margin-top: 20px;">Screenshot Version 2:</p>
+    <img src="./public/UserProfile.jpeg" alt="User Profile" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 10px;">
+    <p>Screenshot Version 2:</p>
     <img src="./public/UserProfile-2.jpeg" alt="User Profile Version 2" style="width: 100%; height: auto; border-radius: 10px;">
   </div>
 
   <!-- Admin Dashboard Page -->
-  <div id="admin-dashboard-page" style="max-width: 600px; text-align: center; margin-bottom: 40px;">
-    <h2>Admin Dashboard</h2>
+  <div id="admin-dashboard-page" style="max-width: 600px; text-align: center; margin-bottom: 20px;">
+    <h3>Admin Dashboard</h3>
     <p>The Admin Dashboard provides comprehensive tools for managing the Hawaii Bites application. Admins can view and edit user profiles, manage vendor information, and maintain the consolidated menu directory. It ensures smooth operation and seamless user experience.</p>
     <img src="./public/Admin-Dashboard.jpeg" alt="Admin Dashboard" style="width: 100%; height: auto; border-radius: 10px;">
   </div>
 
   <!-- Vendor Dashboard Page -->
   <div id="vendor-dashboard-page" style="max-width: 600px; text-align: center; margin-bottom: 40px;">
-    <h2>Vendor Dashboard</h2>
+    <h3>Vendor Dashboard</h3>
     <p>The Vendor Dashboard allows food vendors to manage their menu offerings and update their profile information. This dashboard helps vendors stay connected with customers and provide real-time updates on available items.</p>
     <img src="./public/VendorDashboard.jpeg" alt="Vendor Dashboard" style="width: 100%; height: auto; border-radius: 10px;">
   </div>
+</section>
 
-</div>
 
 ---
 
