@@ -107,6 +107,8 @@ Hawaii Bites provides a consolidated menu from all food vendors at the Universit
     <h3>Landing Page</h3>
     <p>The first look at Hawaii Bites, giving users an overview of the app's features and inviting them to explore the best food options on campus.</p>
     <img src="./public/LandingPage.jpeg" alt="Landing Page" style="width: 100%; height: auto; border-radius: 10px;">
+    <p>Screenshot Version 2:</p>
+    <img src="./public/LandingPage-2.jpeg" alt="Home Page Version 2" style="width: 100%; height: auto; border-radius: 10px;">
   </div>
 
   <!-- Home Page -->
