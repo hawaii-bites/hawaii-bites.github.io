@@ -210,7 +210,7 @@ This contract outlines the team’s commitments, responsibilities, and collabora
 
 ---
 
-## GitHub Hosting Guidlines for Efficient Project Management
+## GitHub Hosting Guidlines
 
 To ensure compliance with GitHub hosting guidelines for project management, we are actively adhering to their recommended practices across several dimensions of our project setup and development workflow. By hosting all source code necessary for building our application while excluding derived files, we ensure that new developers can easily set up the system without additional dependencies. We leverage a .gitignore file to prevent derived files like node_modules/ and other unnecessary artifacts (e.g., .DS_Store on Mac systems or development-specific settings files) from being included in our repository. This maintains a clean and efficient project structure and adheres to GitHub’s best practices for managing repositories.
 
