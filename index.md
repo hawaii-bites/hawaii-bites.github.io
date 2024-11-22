@@ -27,13 +27,13 @@ title: Hawaii Bites
         <a href="#issue-boards" style="text-decoration: none; font-weight: bold; color: #8B0000;">Issue Boards</a>
       </li>
       <li style="margin-bottom: 10px;">
+        <a href="#team-contract-link" style="text-decoration: none; font-weight: bold; color: #8B0000;">Team Contract Link</a>
+      </li>
+      <li style="margin-bottom: 10px;">
         <a href="#screenshots" style="text-decoration: none; font-weight: bold; color: #8B0000;">Screenshots</a>
       </li>
       <li style="margin-bottom: 10px;">
         <a href="#meet-the-team" style="text-decoration: none; font-weight: bold; color: #8B0000;">Meet the Team</a>
-      </li>
-      <li style="margin-bottom: 10px;">
-        <a href="#team-contract" style="text-decoration: none; font-weight: bold; color: #8B0000;">Team Contract</a>
       </li>
       <li style="margin-bottom: 10px;">
         <a href="#deployment" style="text-decoration: none; font-weight: bold; color: #8B0000;">Deployment</a>
@@ -62,6 +62,9 @@ Hawaii Bites provides a consolidated menu from all food vendors at the Universit
 - [Milestone 1 (M1) Project Board](https://github.com/orgs/hawaii-bites/projects/6)  
 - [Milestone 2 (M2) Project Board](https://github.com/orgs/hawaii-bites/projects/5/views/1)
 
+## Team Contract Link
+- [Team Contract Link](https://docs.google.com/document/d/1e0Z4KQ5d5ZOMLgAXoBlIeQKf8K3T6cgxiRi-02hE0eI/edit?usp=sharing)
+
 ---
 
 ## Up-to-date Screenshots
@@ -70,33 +73,34 @@ Hawaii Bites provides a consolidated menu from all food vendors at the Universit
 <section id="up-to-date-screenshots" style="padding: 20px;">
   <h2 style="text-align: center; color: #8B0000; font-family: 'Arial', sans-serif; margin-bottom: 20px;">Up-to-date Screenshots</h2>
 
-  <!-- Navigation -->
-  <nav style="margin: 20px 0; padding-left: 10px;">
-    <h3 style="text-align: left; color: #8B0000; font-family: 'Arial', sans-serif;">Screenshots Navigation</h3>
-    <ul style="list-style: none; padding: 0; margin: 0; font-size: 1em;">
-      <li style="margin-bottom: 10px;">
-        <a href="#landing-page" style="text-decoration: none; color: #065f46;">Landing Page</a>
-      </li>
-      <li style="margin-bottom: 10px;">
-        <a href="#home-page" style="text-decoration: none; color: #065f46;">Home Page</a>
-      </li>
-      <li style="margin-bottom: 10px;">
-        <a href="#todays-top-picks-page" style="text-decoration: none; color: #065f46;">Today's Top Picks</a>
-      </li>
-      <li style="margin-bottom: 10px;">
-        <a href="#foods-available-right-now-page" style="text-decoration: none; color: #065f46;">Foods Available Right Now</a>
-      </li>
-      <li style="margin-bottom: 10px;">
-        <a href="#user-profile-page" style="text-decoration: none; color: #065f46;">User Profile</a>
-      </li>
-      <li style="margin-bottom: 10px;">
-        <a href="#admin-dashboard-page" style="text-decoration: none; color: #065f46;">Admin Dashboard</a>
-      </li>
-      <li style="margin-bottom: 10px;">
-        <a href="#vendor-dashboard-page" style="text-decoration: none; color: #065f46;">Vendor Dashboard</a>
-      </li>
-    </ul>
-  </nav>
+<!-- Navigation -->
+<nav style="margin: 20px 0; padding-left: 10px;">
+  <h3 style="text-align: left; color: #8B0000; font-family: 'Arial', sans-serif;">Screenshots Navigation</h3>
+  <ul style="list-style: none; padding: 0; margin: 0; font-size: 1em;">
+    <li style="margin-bottom: 10px;">
+      <a href="#landing-page" style="text-decoration: none; color: #8B0000;">Landing Page</a>
+    </li>
+    <li style="margin-bottom: 10px;">
+      <a href="#home-page" style="text-decoration: none; color: #8B0000;">Home Page</a>
+    </li>
+    <li style="margin-bottom: 10px;">
+      <a href="#todays-top-picks-page" style="text-decoration: none; color: #8B0000;">Today's Top Picks</a>
+    </li>
+    <li style="margin-bottom: 10px;">
+      <a href="#foods-available-right-now-page" style="text-decoration: none; color: #8B0000;">Foods Available Right Now</a>
+    </li>
+    <li style="margin-bottom: 10px;">
+      <a href="#user-profile-page" style="text-decoration: none; color: #8B0000;">User Profile</a>
+    </li>
+    <li style="margin-bottom: 10px;">
+      <a href="#admin-dashboard-page" style="text-decoration: none; color: #8B0000;">Admin Dashboard</a>
+    </li>
+    <li style="margin-bottom: 10px;">
+      <a href="#vendor-dashboard-page" style="text-decoration: none; color: #8B0000;">Vendor Dashboard</a>
+    </li>
+  </ul>
+</nav>
+
 
   <!-- Landing Page -->
   <div id="landing-page" style="max-width: 600px; text-align: center; margin-bottom: 20px;">
@@ -181,29 +185,6 @@ Hawaii Bites provides a consolidated menu from all food vendors at the Universit
 
 ---
 
-## Team Contract
-
-This contract outlines the team’s commitments, responsibilities, and collaboration practices to ensure efficient and productive project development.
-
-#### Meeting Schedule:
-- **In-Person Meetings:** Every Tuesday and Thursday after ICS 314 class.  
-- **Discord Check-ins:** Nightly at 9 PM HST for progress updates.
-
-#### Task Distribution:
-- Tasks are managed via GitHub Issues and the project board, with each member contributing to design, development, and deployment.
-
-#### Communication:
-- **Primary:** Discord for real-time updates.  
-- **Secondary:** GitHub Issues for task tracking and detailed discussions.
-
-#### Code Review and Deadlines:
-- All work is done in branches and reviewed before merging. Deadlines are strictly followed to align with ICS 314 guidelines.
-
-#### Conflict Resolution:
-- Issues are discussed in meetings or escalated to the instructor when necessary.
-
----
-
 ## Deployment
 
 - [Deployment Application](https://hawaii-bites.vercel.app/)
@@ -225,3 +206,4 @@ By following these guidelines, we not only maximize the benefits of GitHub’s h
 
 - **Email:** [hawaiibites@gmail.com](mailto:hawaiibites@gmail.com)  
 - **GitHub:** [Hawaii Bites Organization](https://github.com/hawaii-bites/hawaii-bites.github.io)
+
