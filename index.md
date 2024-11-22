@@ -7,10 +7,11 @@ title: Hawaii Bites
 <nav style="background-color: #f8f9fa; padding: 15px; border-bottom: 2px solid #ddd; margin-bottom: 20px;">
   <ul style="list-style: none; display: flex; justify-content: center; margin: 0; padding: 0; gap: 30px;">
     <li><a href="#overview" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Overview</a></li>
+    <li><a href="#github-organization" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">GitHub Organization</a></li>
+    <li><a href="#issue-boards" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Issue Boards (M1 , M2)</a></li>
     <li><a href="#up-to-date-screenshots" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Screenshots</a></li>
-    <li><a href="#meet-the-team" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Meet the Team</a></li>
+    <li><a href="#meet-the-team-woof!" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Meet the Team</a></li>
     <li><a href="#team-contract" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Team Contract</a></li>
-    <li><a href="#project-links" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Project Links</a></li>
     <li><a href="#deployment" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Deployment</a></li>
     <li><a href="#contact-us" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Contact Us</a></li>
   </ul>
@@ -31,9 +32,13 @@ Hawaii Bites provides a consolidated menu from all food vendors at the Universit
 ---
 
 ## GitHub Organization
-- [Organization Page](https://github.com/hawaii-bites/hawaii-bites.github.io)  
+- [Organization Page](https://github.com/hawaii-bites)
 
+## Issue Boards (M1 , M2)
+- [Milestone 1 (M1) Project Board](https://github.com/orgs/hawaii-bites/projects/1)  
+- [Milestone 2 (M2) Project Board](https://github.com/orgs/hawaii-bites/projects/5/views/1)
 
+---
 
 ## Up-to-date Screenshots
 
@@ -96,7 +101,7 @@ Hawaii Bites provides a consolidated menu from all food vendors at the Universit
 
 ---
 
-## Meet the Team
+## Meet the Team - Woof!
 
 <div id="meet-the-team" style="display: flex; justify-content: space-between;">
 
@@ -142,18 +147,6 @@ This contract outlines the team’s commitments, responsibilities, and collabora
 
 #### Conflict Resolution:
 - Issues are discussed in meetings or escalated to the instructor when necessary.
-
----
-
-## Project Links
-
-### Project Boards
-- [Milestone 1 (M1) Project Board](https://github.com/orgs/hawaii-bites/projects/1)  
-- [Milestone 2 (M2) Project Board](https://github.com/orgs/hawaii-bites/projects/5/views/1)
-
-### Repositories
-- [Main Repository](https://github.com/hawaii-bites/hawaii-bites.github.io)  
-- [Project Repository](https://github.com/hawaii-bites/hawaii-bites-project)
 
 ---
 
