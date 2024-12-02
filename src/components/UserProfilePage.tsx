@@ -6,7 +6,6 @@ import Footer from "@/components/Footer";
 import Image from "next/image";
 
 const UserProfilePage: React.FC = () => {
-  // Profile State
   const [profile, setProfile] = useState({
     firstName: "John",
     lastName: "Doe",
@@ -16,18 +15,8 @@ const UserProfilePage: React.FC = () => {
     address: "123 Main Street, Honolulu, HI",
   });
 
-  // Modal State
   const [isPreferencesModalOpen, setIsPreferencesModalOpen] = useState(false);
 
-  // Preferences State
-  const [preferences, setPreferences] = useState({
-    favoriteFoods: "",
-    favoriteRestaurants: "",
-    allergies: "",
-    dietaryRestrictions: "",
-  });
-
-  // Profile Picture Upload Handler
   const handleProfilePictureUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (file) {
@@ -39,35 +28,23 @@ const UserProfilePage: React.FC = () => {
     }
   };
 
-  // Handle Preferences Form Submit
-  const handlePreferencesSubmit = () => {
-    alert(
-      `Preferences updated:\n- Favorite Foods: ${preferences.favoriteFoods}\n- Favorite Restaurants: ${preferences.favoriteRestaurants}\n- Allergies: ${preferences.allergies}\n- Dietary Restrictions: ${preferences.dietaryRestrictions}`
-    );
-    setIsPreferencesModalOpen(false);
-  };
-
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
       <Navbar />
 
-      <div className="container mx-auto p-5 bg-white rounded-lg shadow-md mt-10">
-        <h1 className="text-4xl font-extrabold text-center text-green-800 mb-8">
-          User Profile
-        </h1>
-
-        {/* Profile Information */}
-        <section className="mb-10">
+      <div className="container mx-auto py-10 px-5">
+        <div className="bg-white rounded-lg shadow-md p-8">
+          {/* Profile Header */}
           <div className="flex flex-col items-center">
-            <div className="w-32 h-32 mb-4 relative">
+            <div className="relative w-28 h-28 mb-4">
               <Image
                 src={profile.profilePicture || "/placeholder.png"}
                 alt="Profile Picture"
-                className="rounded-full object-cover border-4 border-green-700 shadow-lg"
-                width={128}
-                height={128}
+                className="rounded-full border-4 border-green-600 shadow-lg object-cover"
+                width={112}
+                height={112}
               />
-              <label className="absolute bottom-0 right-0 bg-green-700 text-white p-2 rounded-full cursor-pointer">
+              <label className="absolute bottom-0 right-0 bg-green-600 text-white p-2 rounded-full cursor-pointer shadow-md">
                 <input
                   type="file"
                   accept="image/*"
@@ -77,36 +54,44 @@ const UserProfilePage: React.FC = () => {
                 Upload
               </label>
             </div>
-            <p className="text-xl font-bold">{profile.firstName} {profile.lastName}</p>
-            <p className="text-lg text-gray-600">{profile.email}</p>
+            <h1 className="text-2xl font-semibold text-gray-800">
+              {profile.firstName} {profile.lastName}
+            </h1>
+            <p className="text-lg text-gray-500">{profile.email}</p>
           </div>
-          <div className="mt-6">
-            <p className="text-lg">Birthday: {profile.birthday}</p>
-            <p className="text-lg">Address: {profile.address}</p>
+
+          {/* Profile Details */}
+          <div className="mt-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="flex flex-col">
+                <label className="text-sm font-semibold text-gray-600">Birthday</label>
+                <p className="text-gray-800">{profile.birthday}</p>
+              </div>
+              <div className="flex flex-col">
+                <label className="text-sm font-semibold text-gray-600">Address</label>
+                <p className="text-gray-800">{profile.address}</p>
+              </div>
+            </div>
           </div>
-          <div className="mt-6 flex flex-col items-center">
-            <button className="bg-blue-500 text-white px-6 py-2 rounded-lg shadow-md mb-4">
+
+          {/* Action Buttons */}
+          <div className="mt-8 flex flex-wrap justify-center gap-4">
+            <button className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-blue-800">
               Change Password
             </button>
-            <button className="bg-red-500 text-white px-6 py-2 rounded-lg shadow-md">
+            <button className="bg-red-600 text-white px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-red-800">
               Delete Account
             </button>
-          </div>
-          <div className="mt-4 text-center">
-            <button className="bg-gray-500 text-white px-4 py-2 rounded-lg">
+            <button className="bg-gray-600 text-white px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-gray-800">
               User Guide
             </button>
+            <button
+              className="bg-green-600 text-white px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-green-800"
+              onClick={() => setIsPreferencesModalOpen(true)}
+            >
+              Update Preferences
+            </button>
           </div>
-        </section>
-
-        {/* Preferences Button */}
-        <div className="text-center">
-          <button
-            className="bg-green-600 text-white px-6 py-3 rounded-lg shadow-md"
-            onClick={() => setIsPreferencesModalOpen(true)}
-          >
-            Update Preferences
-          </button>
         </div>
       </div>
 
@@ -121,33 +106,18 @@ const UserProfilePage: React.FC = () => {
               type="text"
               className="w-full border-2 border-gray-300 rounded-lg p-2 mb-4"
               placeholder="e.g., Italian, Sushi"
-              value={preferences.favoriteFoods}
-              onChange={(e) => setPreferences({ ...preferences, favoriteFoods: e.target.value })}
             />
 
             <label className="block mb-2 font-semibold">Favorite Restaurants</label>
             <textarea
               className="w-full border-2 border-gray-300 rounded-lg p-2 mb-4"
               placeholder="e.g., Mama's Fish House, Nobu"
-              value={preferences.favoriteRestaurants}
-              onChange={(e) => setPreferences({ ...preferences, favoriteRestaurants: e.target.value })}
             />
 
             <label className="block mb-2 font-semibold">Allergies</label>
             <textarea
               className="w-full border-2 border-gray-300 rounded-lg p-2 mb-4"
               placeholder="e.g., Peanuts, Gluten"
-              value={preferences.allergies}
-              onChange={(e) => setPreferences({ ...preferences, allergies: e.target.value })}
-            />
-
-            <label className="block mb-2 font-semibold">Dietary Restrictions</label>
-            <input
-              type="text"
-              className="w-full border-2 border-gray-300 rounded-lg p-2 mb-4"
-              placeholder="e.g., Vegetarian, Vegan"
-              value={preferences.dietaryRestrictions}
-              onChange={(e) => setPreferences({ ...preferences, dietaryRestrictions: e.target.value })}
             />
 
             <div className="flex justify-end">
@@ -157,10 +127,7 @@ const UserProfilePage: React.FC = () => {
               >
                 Cancel
               </button>
-              <button
-                className="bg-green-600 text-white px-4 py-2 rounded-lg"
-                onClick={handlePreferencesSubmit}
-              >
+              <button className="bg-green-600 text-white px-4 py-2 rounded-lg">
                 Save
               </button>
             </div>
