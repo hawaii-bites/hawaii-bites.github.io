@@ -30,6 +30,9 @@ title: Hawaii Bites
         <a href="#team-contract-link" style="text-decoration: none; font-weight: bold; color: #8B0000;">Team Contract Link</a>
       </li>
       <li style="margin-bottom: 10px;">
+        <a href="#status-of-pages" style="text-decoration: none; font-weight: bold; color: #8B0000;">Status of Pages</a>
+      </li>
+      <li style="margin-bottom: 10px;">
         <a href="#screenshots" style="text-decoration: none; font-weight: bold; color: #8B0000;">Screenshots</a>
       </li>
       <li style="margin-bottom: 10px;">
@@ -47,6 +50,7 @@ title: Hawaii Bites
     </ul>
   </nav>
 </section>
+
 
 ---
 
