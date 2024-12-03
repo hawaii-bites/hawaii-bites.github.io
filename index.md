@@ -61,6 +61,7 @@ Hawaii Bites provides a consolidated menu from all food vendors at the Universit
 ## Issue Boards (M1 , M2)
 - [Milestone 1 (M1) Project Board](https://github.com/orgs/hawaii-bites/projects/6)  
 - [Milestone 2 (M2) Project Board](https://github.com/orgs/hawaii-bites/projects/5/views/1)
+- [Milestone 3 (M3) Project Board](https://github.com/orgs/hawaii-bites/projects/5/views/1)
 
 ## Team Contract Link
 - [Team Contract Link](https://docs.google.com/document/d/1e0Z4KQ5d5ZOMLgAXoBlIeQKf8K3T6cgxiRi-02hE0eI/edit?usp=sharing)
