@@ -30,6 +30,9 @@ title: Hawaii Bites
         <a href="#team-contract-link" style="text-decoration: none; font-weight: bold; color: #8B0000;">Team Contract Link</a>
       </li>
       <li style="margin-bottom: 10px;">
+        <a href="#status-of-pages" style="text-decoration: none; font-weight: bold; color: #8B0000;">Status of Pages</a>
+      </li>
+      <li style="margin-bottom: 10px;">
         <a href="#screenshots" style="text-decoration: none; font-weight: bold; color: #8B0000;">Screenshots</a>
       </li>
       <li style="margin-bottom: 10px;">
@@ -48,6 +51,7 @@ title: Hawaii Bites
   </nav>
 </section>
 
+
 ---
 
 ## Overview
@@ -65,6 +69,31 @@ Hawaii Bites provides a consolidated menu from all food vendors at the Universit
 
 ## Team Contract Link
 - [Team Contract Link](https://docs.google.com/document/d/1e0Z4KQ5d5ZOMLgAXoBlIeQKf8K3T6cgxiRi-02hE0eI/edit?usp=sharing)
+
+---
+
+## Status of Pages
+
+### Landing Page
+- **Design:** A visually engaging introduction to the application, guiding users to explore its features.
+
+### Home Page
+- **Design:** Includes visually structured sections for daily specials, popular food options, and user-relevant recommendations.
+
+### Today’s Top Picks
+- **Design:** Features a card-based layout showcasing curated food choices with descriptions, images, and locations.
+
+### Foods Available Right Now
+- **Design:** Live updates for food options on campus with their availability and highlights, presented in a responsive layout.
+
+### User Profile Page
+- **Design:** Allows users to personalize their profile and manage preferences with an intuitive and user-friendly interface.
+
+### Vendor Dashboard
+- **Design:** Enables vendors to efficiently manage menu offerings and profile information with a clear, organized layout.
+
+### Admin Dashboard
+- **Design:** Offers tools for managing users, vendors, and menu data, ensuring smooth application operations with a professional interface.
 
 ---
 
