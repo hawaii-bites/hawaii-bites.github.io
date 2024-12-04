@@ -70,6 +70,9 @@ Hawaii Bites provides a consolidated menu from all food vendors at the Universit
 ## Team Contract Link
 - [Team Contract Link](https://docs.google.com/document/d/1e0Z4KQ5d5ZOMLgAXoBlIeQKf8K3T6cgxiRi-02hE0eI/edit?usp=sharing)
 
+## Continuous Integration Badge
+![CI Status](https://github.com/kanoaaaa/hawaii-bites.github.io/actions/workflows/ci.yml/badge.svg)
+
 ---
 
 ## Status of Pages
