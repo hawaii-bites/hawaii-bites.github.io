@@ -20,6 +20,16 @@ const vendors = [
   { id: "panda-express", name: "Panda Express" },
 ];
 
+const foodItems = [
+  { name: "Chili Cheese Dog", category: "Comfort Food", location: "Krazy Dogs" },
+  { name: "Sweet Mango Sago", category: "Sweet Treats", location: "Saap Saap HI" },
+  { name: "Seafood Curry", category: "Seafood", location: "Lasoon" },
+  { name: "Teriyaki Chicken Bowl", category: "Comfort Food", location: "L&L Hawaiian Barbecue" },
+  { name: "Acai Bowl", category: "Healthy Options", location: "Jamba Juice" },
+  { name: "Thai Curry", category: "Ethnic Favorites", location: "Olay's Thai Lao Express" },
+  { name: "Ube Pancake", category: "Sweet Treats", location: "HoloHolo Grill" },
+];
+
 const fuzzyMatch = (input: string, target: string): boolean => {
   const normalizedInput = input.trim().toLowerCase();
   const normalizedTarget = target.trim().toLowerCase();
@@ -40,12 +50,42 @@ const fuzzyMatch = (input: string, target: string): boolean => {
 const MainContent: React.FC = () => {
   const [timeOfDay, setTimeOfDay] = useState<string>("");
   const [search, setSearch] = useState("");
+  const [recommendations, setRecommendations] = useState<any[]>([]);
   const router = useRouter();
+
+  // Fetch user preferences (simulate fetching from profile/localStorage)
+  const userPreferences = JSON.parse(
+    localStorage.getItem("userPreferences") || JSON.stringify(["Sweet Treats", "Seafood"])
+  );
 
   useEffect(() => {
     const currentHour = new Date().getHours();
     setTimeOfDay(currentHour < 10 ? "Breakfast" : currentHour < 15 ? "Lunch" : "Dinner");
+
+    // Check if recommendations need to be updated
+    const lastUpdated = localStorage.getItem("lastUpdated");
+    const today = new Date().toDateString();
+
+    if (lastUpdated !== today) {
+      randomizeRecommendations();
+      localStorage.setItem("lastUpdated", today);
+    } else {
+      const savedRecommendations = JSON.parse(
+        localStorage.getItem("dailyRecommendations") || "[]"
+      );
+      setRecommendations(savedRecommendations);
+    }
   }, []);
+
+  // Randomize daily recommendations
+  const randomizeRecommendations = () => {
+    const filteredItems = foodItems.filter((item) =>
+      userPreferences.includes(item.category)
+    );
+    const randomized = filteredItems.sort(() => 0.5 - Math.random()).slice(0, 3);
+    setRecommendations(randomized);
+    localStorage.setItem("dailyRecommendations", JSON.stringify(randomized));
+  };
 
   const handleSearch = (event: React.FormEvent) => {
     event.preventDefault();
@@ -112,7 +152,6 @@ const MainContent: React.FC = () => {
             Search
           </button>
         </form>
-        {/* Explore by Category */}
         <div className="flex flex-wrap gap-4 justify-center mb-16">
           {categories.map((category, index) => (
             <button
@@ -122,6 +161,22 @@ const MainContent: React.FC = () => {
             >
               {category}
             </button>
+          ))}
+        </div>
+      </section>
+
+      {/* Recommended for You Section */}
+      <section className="text-center mb-16">
+        <h2 className="text-3xl font-semibold text-[#065f46] mb-8">Recommended for You</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {recommendations.map((recommendation, index) => (
+            <div
+              key={index}
+              className="p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-xl"
+            >
+              <h3 className="text-2xl font-bold text-[#065f46] mb-2">{recommendation.name}</h3>
+              <p className="text-gray-600">Available at {recommendation.location}</p>
+            </div>
           ))}
         </div>
       </section>
@@ -144,7 +199,7 @@ const MainContent: React.FC = () => {
 
       {/* Popular Choices Section */}
       <section className="text-center mb-16">
-        <h2 className="text-3xl font-semibold text-[#065f46] mb-8">Popular Choices</h2>
+        <h2 className="text-3xl font-semibold text-[#065f46] mb-8">Popular Choices Around Campus</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {popularChoices.map((choice, index) => (
             <div

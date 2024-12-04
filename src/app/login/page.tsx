@@ -1,27 +1,27 @@
-"use client";  // This tells Next.js this is a client component
+"use client";
 
-import { useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function LoginPage() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
   const router = useRouter();
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
 
-    const validEmail = 'dkb25@hawaii.edu';
-    const validPassword = 'SpaceCadet88';
-    const validEmail2 = 'sethi3@hawaii.edu';
-    const validPassword2 = 'Sword23';
+    // Hard-coded email and password for temporary access
+    const allowedEmail = "dkb25@hawaii.edu";
+    const allowedPassword = "SpaceCadet88";
 
-    // Validate email and password
-    if ((email === validEmail && password === validPassword) || (email === validEmail2 && password === validPassword2)) {
-      alert('Login successful!');
-      router.push('/home');
+    if (email === allowedEmail && password === allowedPassword) {
+      alert("Login successful!");
+      router.push("/home"); // Redirect to home page
     } else {
-      alert('Invalid UH email or password.');
+      setErrorMessage("Invalid email or password.");
     }
   };
 
@@ -54,6 +54,7 @@ export default function LoginPage() {
               required
             />
           </div>
+          {errorMessage && <p className="text-red-500 text-sm mb-4">{errorMessage}</p>}
           <button
             type="submit"
             className="w-full bg-green-600 text-white py-2 rounded-lg font-semibold hover:bg-green-700"
@@ -61,6 +62,12 @@ export default function LoginPage() {
             Login
           </button>
         </form>
+        <p className="mt-4 text-center text-sm text-gray-600">
+          Don't have an account?{" "}
+          <Link href="/signup" className="text-green-600 font-semibold hover:underline">
+            Sign Up
+          </Link>
+        </p>
       </div>
     </div>
   );
