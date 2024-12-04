@@ -70,6 +70,9 @@ Hawaii Bites provides a consolidated menu from all food vendors at the Universit
 ## Team Contract Link
 - [Team Contract Link](https://docs.google.com/document/d/1e0Z4KQ5d5ZOMLgAXoBlIeQKf8K3T6cgxiRi-02hE0eI/edit?usp=sharing)
 
+## Continuous Integration Badge
+![CI Status](https://github.com/kanoaaaa/hawaii-bites.github.io/actions/workflows/ci.yml/badge.svg)
+
 ---
 
 ## Status of Pages
@@ -139,6 +142,8 @@ Hawaii Bites provides a consolidated menu from all food vendors at the Universit
     <img src="./public/LandingPage.jpeg" alt="Landing Page" style="width: 100%; height: auto; border-radius: 10px;">
     <p>Screenshot Version 2:</p>
     <img src="./public/LandingPage-2.jpeg" alt="Home Page Version 2" style="width: 100%; height: auto; border-radius: 10px;">
+    <p>Screenshot Version 3:</p>
+    <img src="./public/LandingPage-3.jpeg" alt="Home Page Version 2" style="width: 100%; height: auto; border-radius: 10px;">
   </div>
 
   <!-- Home Page -->
@@ -171,6 +176,12 @@ Hawaii Bites provides a consolidated menu from all food vendors at the Universit
     <img src="./public/UserProfile.jpeg" alt="User Profile" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 10px;">
     <p>Screenshot Version 2:</p>
     <img src="./public/UserProfile-2.jpeg" alt="User Profile Version 2" style="width: 100%; height: auto; border-radius: 10px;">
+    <p>Screenshot Version 3:</p>
+    <img src="./public/UserProfile-3.jpeg" alt="User Profile Version 2" style="width: 100%; height: auto; border-radius: 10px;">
+    <p>Screenshot Version 4:</p>
+    <img src="./public/UserProfile-4.jpeg" alt="User Profile Version 2" style="width: 100%; height: auto; border-radius: 10px;">
+    <p>Screenshot Version 5:</p>
+    <img src="./public/UserProfile-5.jpeg" alt="User Profile Version 2" style="width: 100%; height: auto; border-radius: 10px;">
   </div>
 
   <!-- Admin Dashboard Page -->
@@ -185,6 +196,8 @@ Hawaii Bites provides a consolidated menu from all food vendors at the Universit
     <h3>Vendor Dashboard</h3>
     <p>The Vendor Dashboard allows food vendors to manage their menu offerings and update their profile information. This dashboard helps vendors stay connected with customers and provide real-time updates on available items.</p>
     <img src="./public/VendorDashboard.jpeg" alt="Vendor Dashboard" style="width: 100%; height: auto; border-radius: 10px;">
+    <p>Screenshot Version 2:</p>
+    <img src="./public/VendorDashboard-2.jpeg" alt="Vendor Dashboard" style="width: 100%; height: auto; border-radius: 10px;">
   </div>
 </section>
 
