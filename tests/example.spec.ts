@@ -1,6 +1,9 @@
 import { test, expect } from '@playwright/test';
 
-test('example test', async ({ page }) => {
-  await page.goto('https://hawaii-bites.vercel.app/login'); // Update with your deployed URL
-  await expect(page).toHaveTitle(/Hawaii Bites/); // Replace with the actual title of your login page
+test('home page loads correctly', async ({ page }) => {
+  // Navigate to your homepage
+  await page.goto('https://hawaii-bites.vercel.app/');
+  
+  // Verify the page contains the expected header or text
+  await expect(page.locator('h1')).toHaveText('Hawaii Bites'); // Replace 'Hawaii Bites' with your actual homepage header text
 });
