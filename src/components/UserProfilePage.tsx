@@ -3,15 +3,23 @@
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { supabase } from "@/lib/supabaseClient";
-import Image from "next/image";
+import supabase from "@lib/supabaseClient";
+
+
+
+
 
 const UserProfilePage: React.FC = () => {
-  const [profile, setProfile] = useState({
+  const [profile, setProfile] = useState<{
+    firstName: string;
+    lastName: string;
+    email: string;
+    birthday: string;
+    address: string;
+  }>({
     firstName: "John",
     lastName: "Doe",
     email: "john.doe@example.com",
-    profilePicture: null,
     birthday: "1990-01-01",
     address: "123 Main Street, Honolulu, HI",
   });
@@ -19,44 +27,40 @@ const UserProfilePage: React.FC = () => {
   const [editingField, setEditingField] = useState<string | null>(null);
   const [fieldValue, setFieldValue] = useState("");
   const [preferences, setPreferences] = useState<string[]>([]);
-
-  const handleProfilePictureUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (file) {
-      const reader = new FileReader();
-      reader.onloadend = () => {
-        setProfile((prev) => ({ ...prev, profilePicture: reader.result as string }));
-      };
-      reader.readAsDataURL(file);
-    }
-  };
-
-  const startEditing = (field: string, currentValue: string) => {
-    setEditingField(field);
-    setFieldValue(currentValue);
-  };
+  const [isPreferencesModalOpen, setIsPreferencesModalOpen] = useState(false);
 
   const saveField = () => {
-    setProfile((prev) => ({
-      ...prev,
-      [editingField as keyof typeof profile]: fieldValue,
-    }));
-    setEditingField(null);
+    if (editingField) {
+      setProfile((prev) => ({
+        ...prev,
+        [editingField]: fieldValue,
+      }));
+      setEditingField(null);
+    }
   };
 
   const handleSavePreferences = async () => {
     const userId = 1; // Replace this with actual user ID logic
-
+    console.log("Preferences to save:", preferences);
+  
     const { data, error } = await supabase
       .from("UserPreferences")
       .upsert({ user_id: userId, preferences });
-
+  
     if (error) {
       console.error("Error saving preferences:", error);
       alert("Failed to save preferences.");
     } else {
+      console.log("Preferences saved successfully:", data);
       alert("Preferences saved successfully!");
     }
+  };
+  
+  
+
+  const startEditing = (field: string, currentValue: string) => {
+    setEditingField(field);
+    setFieldValue(currentValue);
   };
 
   return (
@@ -67,24 +71,6 @@ const UserProfilePage: React.FC = () => {
         <div className="bg-white rounded-lg shadow-md p-8">
           {/* Profile Header */}
           <div className="flex flex-col items-center">
-            <div className="relative w-28 h-28 mb-4">
-              <Image
-                src={profile.profilePicture || "/placeholder.png"}
-                alt="Profile Picture"
-                className="rounded-full border-4 border-green-600 shadow-lg object-cover"
-                width={112}
-                height={112}
-              />
-              <label className="absolute bottom-0 right-0 bg-green-600 text-white p-2 rounded-full cursor-pointer shadow-md">
-                <input
-                  type="file"
-                  accept="image/*"
-                  className="hidden"
-                  onChange={handleProfilePictureUpload}
-                />
-                Upload
-              </label>
-            </div>
             <h1 className="text-2xl font-semibold text-gray-800">
               {profile.firstName} {profile.lastName}
             </h1>
@@ -107,9 +93,7 @@ const UserProfilePage: React.FC = () => {
                         onChange={(e) => setFieldValue(e.target.value)}
                       />
                     ) : (
-                      <p className="text-gray-800">
-                        {profile[field as keyof typeof profile]}
-                      </p>
+                      <p className="text-gray-800">{profile[field as keyof typeof profile]}</p>
                     )}
                   </div>
                   {editingField === field ? (
@@ -122,12 +106,12 @@ const UserProfilePage: React.FC = () => {
                   ) : (
                     <button
                       className="ml-4 text-blue-600 underline"
-                      onClick={() =>
-                        startEditing(
-                          field,
-                          profile[field as keyof typeof profile] as string
-                        )
-                      }
+                      onClick={() => {
+                        const value = profile[field as keyof typeof profile];
+                        if (typeof value === "string") {
+                          startEditing(field, value);
+                        }
+                      }}
                     >
                       Edit
                     </button>
@@ -137,33 +121,33 @@ const UserProfilePage: React.FC = () => {
             )}
           </div>
 
-          {/* Preferences Form */}
+          {/* Preferences Section */}
           <div className="mt-8">
             <h2 className="text-xl font-bold mb-4">Preferences</h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
               {[
-                "Entree",
-                "Snacks & Sides",
-                "Sticks & Rolls",
-                "Rice & Noodles",
-                "Drinks",
-                "Desserts",
-                "Hot Dogs",
-                "Smoothies",
-                "Bowls",
-                "Breakfast",
-                "Burritos",
-                "Nachos",
-                "Quesadillas",
-                "Flavored Teas",
-                "Milk Teas",
-                "Coffee",
-                "Sandwiches",
-                "Salads",
-                "Tacos",
-                "Soup",
-                "Musubis",
-              ].map((preference) => (
+  "Entree",
+  "Snacks & Sides",
+  "Sticks & Rolls",
+  "Rice & Noodles",
+  "Drinks",
+  "Desserts",
+  "Hot Dogs",
+  "Smoothies",
+  "Bowls",
+  "Breakfast",
+  "Burritos",
+  "Nachos",
+  "Quesadillas",
+  "Flavored Teas",
+  "Milk Teas",
+  "Coffee",
+  "Sandwiches",
+  "Salads",
+  "Tacos",
+  "Soup",
+  "Musubis",
+].map((preference) => (
                 <label key={preference} className="flex items-center space-x-2">
                   <input
                     type="checkbox"
@@ -205,6 +189,32 @@ const UserProfilePage: React.FC = () => {
           </div>
         </div>
       </div>
+
+      {/* Preferences Modal */}
+      {isPreferencesModalOpen && (
+        <div className="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center">
+          <div className="bg-white p-6 rounded-lg shadow-lg w-96">
+            <h2 className="text-2xl font-bold mb-4">Update Preferences</h2>
+            <label className="block mb-2 font-semibold">Favorite Types of Food</label>
+            <input
+              type="text"
+              className="w-full border-2 border-gray-300 rounded-lg p-2 mb-4"
+              placeholder="e.g., Italian, Sushi"
+            />
+            <div className="flex justify-end">
+              <button
+                className="bg-gray-400 text-white px-4 py-2 rounded-lg mr-2"
+                onClick={() => setIsPreferencesModalOpen(false)}
+              >
+                Cancel
+              </button>
+              <button className="bg-green-600 text-white px-4 py-2 rounded-lg">
+                Save
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       <Footer />
     </div>

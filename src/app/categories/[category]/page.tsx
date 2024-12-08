@@ -15,26 +15,30 @@ const menuItems: { name: string; category: string; vendor: string; description: 
   { name: "Loco Moco", category: "popular", vendor: "L&L", description: "Traditional Hawaiian comfort food with hamburger, gravy, and rice." },
 ];
 
-const CategoryPage = () => {
-  const params: { category?: string } = useParams();
+const CategoryPage: React.FC = () => {
+  const params = useParams<{ category?: string }>(); // Retrieve params with optional category
   const category = params?.category;
 
   if (!category) {
     return (
       <div className="container mx-auto py-10 text-center">
-        <h1 className="text-4xl font-bold capitalize mb-4">Invalid Category</h1>
-        <p className="text-gray-600">Please select a valid category from the homepage.</p>
+        <h1 className="text-4xl font-bold capitalize mb-4">Category Not Found</h1>
+        <p className="text-gray-600">Please check the URL or select a category from the menu.</p>
       </div>
     );
   }
 
   // Filter items based on the category from the URL
-  const filteredItems = menuItems.filter((item) => item.category.toLowerCase() === category.toLowerCase());
+  const filteredItems = menuItems.filter(
+    (item) => item.category.toLowerCase() === category.toLowerCase()
+  );
 
   if (filteredItems.length === 0) {
     return (
       <div className="container mx-auto py-10 text-center">
-        <h1 className="text-4xl font-bold capitalize mb-4">Category: {category.charAt(0).toUpperCase() + category.slice(1)}</h1>
+        <h1 className="text-4xl font-bold capitalize mb-4">
+          Category: {category.charAt(0).toUpperCase() + category.slice(1)}
+        </h1>
         <p className="text-gray-600">No items found for this category.</p>
       </div>
     );
