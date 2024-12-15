@@ -1,5 +1,5 @@
 # Hawaii Bites
-![CI Status](https://github.com/kanoaaaa/hawaii-bites.github.io/actions/workflows/ci.yml/badge.svg)
+[![Playwright Tests](https://github.com/hawaii-bites/hawaii-bites-project/actions/workflows/playwright.yml/badge.svg)](https://github.com/hawaii-bites/hawaii-bites-project/actions/workflows/playwright.yml)
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
