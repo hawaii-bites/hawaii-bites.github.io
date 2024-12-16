@@ -48,6 +48,9 @@ title: Hawaii Bites
         <a href="#github-hosting-guidelines" style="text-decoration: none; font-weight: bold; color: #8B0000;">GitHub Hosting Guidelines</a>
       </li>
       <li style="margin-bottom: 10px;">
+        <a href="#contact-us" style="text-decoration: none; font-weight: bold; color: #8B0000;">Feedback</a>
+      </li>
+      <li style="margin-bottom: 10px;">
         <a href="#contact-us" style="text-decoration: none; font-weight: bold; color: #8B0000;">Contact Us</a>
       </li>
     </ul>
@@ -295,6 +298,17 @@ To ensure compliance with GitHub hosting guidelines for project management, we a
 Furthermore, our project utilizes a GitHub organization to centralize team-based development. By creating a dedicated organization with an appropriate and professional name, we streamline collaboration and maintain a cohesive identity for the project. All team members have been invited to the organization and granted "owner" status, ensuring equal participation and administrative access for efficient project management. Additionally, we have established two separate repositories under the organization: one for hosting the project’s documentation and public-facing home page (hawaii-bites.github.io) and another for application development. The index.md file in the documentation repository is designed to provide a comprehensive overview of the system, including user guides with screenshots, developer setup instructions, community feedback, development history, and contact details. This separation of concerns ensures that the documentation remains clear and accessible, while the application repository is optimized for active development.
 
 By following these guidelines, we not only maximize the benefits of GitHub’s hosting features but also create a robust foundation for collaborative and professional project development.
+
+---
+
+
+## Feedback
+
+Users collectively agree that the concept of this project is fantastic! Highlighting campus specials and top food picks is a creative and helpful way to bring more visibility to what’s available. It’s a great tool for students and staff alike to discover new options conveniently.
+
+Users felt that the lack of personal logins made the experience feel less tailored. Adding this feature could make it more engaging for users. In addition, users also noticed that the vendor page isn’t fully functional. This limits its potential to provide details about the various food options and vendors, which could be a valuable addition.
+
+Overall, the users saw the idea behind this project and the potential in it. Addressing the noted issues will undoubtedly make it even better.
 
 ---
 
