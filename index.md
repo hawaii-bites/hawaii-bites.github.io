@@ -304,11 +304,13 @@ By following these guidelines, we not only maximize the benefits of GitHub’s h
 
 ## Feedback
 
-Users collectively agree that the concept of this project is fantastic! Highlighting campus specials and top food picks is a creative and helpful way to bring more visibility to what’s available. It’s a great tool for students and staff alike to discover new options conveniently.
+Users collectively agree that the concept of this project is fantastic! Highlighting campus specials and top food picks is a creative and helpful way to bring more visibility to what’s available. It’s a great tool for students and staff alike to discover new options conveniently 
 
-Users felt that the lack of personal logins made the experience feel less tailored. Adding this feature could make it more engaging for users. In addition, users also noticed that the vendor page isn’t fully functional. This limits its potential to provide details about the various food options and vendors, which could be a valuable addition.
+Users felt that the lack of personal logins made the experience feel less tailored. Adding this feature could make it more engaging for users. In addition, users also noticed that the vendor page isn’t fully functional. This limits its potential to provide details about the various food options and vendors, which could be a valuable addition 
 
-Overall, the users saw the idea behind this project and the potential in it. Addressing the noted issues will undoubtedly make it even better.
+Overall, the users saw the idea behind this project and the potential in it. Addressing the noted issues will undoubtedly make it even better 
+
+Users felt that the lack of personal logins made the experience feel less tailored. Adding this feature could make it more engaging for users. In addition, users also noticed that the vendor page isn’t fully functional. This limits its potential to provide details about the various food options and vendors, which could be a valuable addition. Many suggested adding reviews or ratings for vendors to enhance trust and decision-making. Users also thought the vendor descriptions could include hours of operation and menus for added convenience.
 
 ---
 
